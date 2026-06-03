@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FiFa World Cup</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- HLS.js for IPTV Streams -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    
+    <style>
+        /* Custom Styles & Animations */
+        :root {
+            --bg-glass: rgba(15, 23, 42, 0.7);
+            --bg-glass-heavy: rgba(15, 23, 42, 0.9);
+            --primary: #f22711;
+            --ps-blue: #f21d0a;
+            --ps-neon: #1e7805;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6eef0;
+            color: #fff;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Background Images */
+        #welcome-screen {
+            background-image: url('https://w0.peakpx.com/wallpaper/183/933/HD-wallpaper-fifa-world-cup-26-u-sports-soccer-mexico-canada-football-fifa-world-cup-world-cup-2026-we-are-26-sport-event-international-competition-global-event-tournament.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #main-app {
+            background-image: url('https://wallpapercave.com/wp/wp15655961.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* PlayStation Button Animation */
+        .ps-button {
+            position: relative;
+            background: linear-gradient(135deg, var(--ps-blue), #000000);
+            border: 2px solid var(--ps-neon);
+            box-shadow: 0 0 15px var(--ps-blue), inset 0 0 20px var(--ps-blue);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            text-shadow: 0 0 5px #fff;
+        }
+
+        .ps-button::before {
+            content: '△ ○ ✕ □';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.1);
+            letter-spacing: 15px;
+            white-space: nowrap;
+            z-index: 0;
+            animation: pulse-shapes 3s infinite alternate;
+        }
+
+        .ps-button span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .ps-button:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 30px var(--ps-neon), inset 0 0 30px var(--ps-neon);
+        }
+
+        @keyframes pulse-shapes {
+            0% { opacity: 0.1; transform: translate(-50%, -50%) scale(1); filter: drop-shadow(0 0 2px var(--ps-neon)); }
+            100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1.1); filter: drop-shadow(0 0 8px var(--ps-neon)); }
+        }
+
+        /* Glassmorphism Classes */
+        .glass {
+            background: var(--bg-glass);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-heavy {
+            background: var(--bg-glass-heavy);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        /* Hide scrollbar */
+        ::-webkit-scrollbar { width: 0px; height: 0px; }
+        
+        /* Drawer Transition */
+        #drawer { transition: transform 0.3s ease-in-out; }
+        
+        /* Loading Spinner */
+        .loader {
+            border: 4px solid rgba(255,255,255,0.1);
+            border-left-color: var(--primary);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        /* Video Player Aspect Ratio */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 */
+            background: #000;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Dark Mode Toggle classes */
+        body.dark-mode::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+            pointer-events: none;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= WELCOME SCREEN ================= -->
+    <div id="welcome-screen" class="fixed inset-0 z-50 flex flex-col items-center justify-between py-20 transition-opacity duration-500">
+        <div class="glass px-8 py-4 rounded-2xl shadow-2xl text-center mt-10">
+            <h1 class="text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">Welcome to</h1>
+            <h2 class="text-5xl font-black mt-2 tracking-wider text-white drop-shadow-lg">FiFa World Cup 2026 </h2>
+        </div>
+        
+        <button onclick="startApp()" class="ps-button px-12 py-5 rounded-full text-2xl font-bold tracking-widest shadow-2xl mb-10 group">
+            <span>live stream</span>
+        </button>
+    </div>
+
+    <!-- ================= MAIN APP ================= -->
+    <div id="main-app" class="hidden min-h-screen flex flex-col relative pb-20">
+        
+        <!-- Header -->
+        <header id="main-header" class="glass sticky top-0 z-30 flex justify-between items-center p-4 transition-all">
+            <div class="flex items-center gap-3">
+                <button onclick="toggleDrawer()" class="p-2 rounded-full hover:bg-white/10 transition">
+                    <i class="ph ph-list text-2xl"></i>
+                </button>
+                <h1 class="text-xl font-bold tracking-wide">FiFa World Cup 2026</h1>
+            </div>
+            <button onclick="switchTab('search')" class="p-2 rounded-full hover:bg-white/10 transition">
+                <i class="ph ph-magnifying-glass text-2xl"></i>
+            </button>
+        </header>
+
+        <!-- Sidebar Drawer (Categories) -->
+        <div id="drawer-overlay" class="fixed inset-0 bg-black/60 z-40 hidden opacity-0 transition-opacity" onclick="toggleDrawer()"></div>
+        <nav id="drawer" class="fixed top-0 left-0 bottom-0 w-72 glass-heavy z-50 -translate-x-full flex flex-col">
+            <div class="p-5 border-b border-white/10 flex justify-between items-center">
+                <h2 class="text-xl font-bold">Categories</h2>
+                <button onclick="toggleDrawer()" class="p-2 rounded-full hover:bg-white/10">
+                    <i class="ph ph-x text-xl"></i>
+                </button>
+            </div>
+            <div id="category-list" class="flex-1 overflow-y-auto p-2">
+                <!-- Categories injected here -->
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main id="content" class="flex-1 overflow-y-auto p-4 transition-all">
+            
+            <!-- Loading Indicator -->
+            <div id="loading-indicator" class="flex flex-col items-center justify-center mt-20 hidden">
+                <div class="loader mb-4"></div>
+                <p class="text-gray-300">Loading Channels...</p>
+            </div>
+
+            <!-- HOME TAB -->
+            <div id="tab-home" class="tab-content hidden">
+                <h2 class="text-2xl font-bold mb-4 flex items-center gap-2"><i class="ph-fill ph-fire text-orange-500"></i> Popular Channels</h2>
+                <div id="popular-channels" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"></div>
+            </div>
+
+            <!-- CATEGORY VIEW TAB -->
+            <div id="tab-category-view" class="tab-content hidden">
+                <button onclick="switchTab('home')" class="mb-4 flex items-center gap-2 text-gray-300 hover:text-white transition">
+                    <i class="ph ph-arrow-left text-xl"></i> Back to Home
+                </button>
+                <h2 id="category-page-title" class="text-2xl font-bold mb-6 text-blue-400">Category</h2>
+                <div id="category-page-channels" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"></div>
+            </div>
+
+            <!-- SAVE/FAVORITES TAB -->
+            <div id="tab-save" class="tab-content hidden">
+                <h2 class="text-2xl font-bold mb-4 flex items-center gap-2"><i class="ph-fill ph-bookmark text-blue-400"></i> Saved Channels</h2>
+                <div id="saved-channels" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"></div>
+                <div id="no-saved" class="text-center mt-10 text-gray-400 hidden">
+                    <i class="ph ph-bookmark-simple text-6xl mb-2 opacity-50"></i>
+                    <p>No channels saved yet.</p>
+                </div>
+            </div>
+
+            <!-- SEARCH TAB -->
+            <div id="tab-search" class="tab-content hidden">
+                <div class="relative mb-6">
+                    <i class="ph ph-magnifying-glass absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl"></i>
+                    <input type="text" id="search-input" placeholder="Search channels or categories..." 
+                           class="w-full glass bg-white/5 border border-white/20 rounded-full py-3 pl-12 pr-4 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition"
+                           onkeyup="handleSearch(this.value)">
+                </div>
+                <div id="search-results" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"></div>
+            </div>
+
+            <!-- SETTINGS TAB -->
+            <div id="tab-settings" class="tab-content hidden max-w-2xl mx-auto relative pt-12">
+                
+                <!-- Developer Telegram Links Top Right -->
+                <div class="absolute top-0 right-0 flex gap-4 bg-black/40 px-4 py-2 rounded-bl-2xl rounded-tr-xl border border-white/10">
+                    <a href="https://t.me/junaidcoder8082" target="_blank" class="flex flex-col items-center text-blue-400 hover:text-blue-300 transition hover:scale-110">
+                        <i class="ph-fill ph-telegram-logo text-2xl"></i>
+                        <span class="text-[9px] font-bold tracking-wide mt-1">CHANNEL</span>
+                    </a>
+                    <div class="w-[1px] h-8 bg-white/20"></div>
+                    <a href="https://t.me/junaidcoder8" target="_blank" class="flex flex-col items-center text-blue-400 hover:text-blue-300 transition hover:scale-110">
+                        <i class="ph-fill ph-users-three text-2xl"></i>
+                        <span class="text-[9px] font-bold tracking-wide mt-1">GROUP</span>
+                    </a>
+                </div>
+
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-2 mt-4"><i class="ph-fill ph-gear text-gray-300"></i> Settings</h2>
+                
+                <div class="glass rounded-xl p-4 mb-4">
+                    <h3 class="text-lg font-semibold text-blue-400 mb-3">Display & Appearance</h3>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="font-medium">Dark Mode</p>
+                            <p class="text-sm text-gray-400">Switch to dark theme for night viewing</p>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="setting-darkmode" class="sr-only peer" onchange="toggleSetting('darkMode', this.checked)">
+                            <div class="w-11 h-6 bg-gray-600 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-500"></div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="glass rounded-xl p-4 mb-4">
+                    <h3 class="text-lg font-semibold text-blue-400 mb-3">Playback</h3>
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <p class="font-medium">Video Quality</p>
+                            <p class="text-sm text-gray-400">Adjust streaming preferences</p>
+                        </div>
+                        <select class="bg-black/50 border border-white/20 rounded p-1 text-sm outline-none">
+                            <option>Auto</option>
+                            <option>High</option>
+                            <option>Medium</option>
+                            <option>Low</option>
+                        </select>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="font-medium">Autoplay</p>
+                            <p class="text-sm text-gray-400">Start playing when selecting</p>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="setting-autoplay" class="sr-only peer" checked onchange="toggleSetting('autoplay', this.checked)">
+                            <div class="w-11 h-6 bg-gray-600 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-500"></div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="glass rounded-xl p-4 mb-4">
+                    <h3 class="text-lg font-semibold text-blue-400 mb-3">Data & Storage</h3>
+                    <div class="flex justify-between items-center mb-4 cursor-pointer hover:bg-white/5 p-2 rounded transition" onclick="clearCache()">
+                        <div>
+                            <p class="font-medium">Clear Cache</p>
+                            <p class="text-sm text-gray-400">Free up storage space</p>
+                        </div>
+                        <i class="ph ph-trash text-xl text-red-400"></i>
+                    </div>
+                    <div class="flex justify-between items-center cursor-pointer hover:bg-white/5 p-2 rounded transition" onclick="exportFavorites()">
+                        <div>
+                            <p class="font-medium">Export Favorites</p>
+                            <p class="text-sm text-gray-400">Save your favorites list</p>
+                        </div>
+                        <i class="ph ph-download-simple text-xl text-green-400"></i>
+                    </div>
+                </div>
+
+                <!-- Developer Footer -->
+                <div class="text-center mt-12 mb-6 text-gray-400 font-semibold tracking-wide">
+                    Devloper by Junaid <span class="text-red-500 inline-block animate-pulse text-xl align-middle">❤️</span>
+                </div>
+            </div>
+
+            <!-- PLAYER TAB (Opens in separate view) -->
+            <div id="tab-player" class="tab-content hidden">
+                
+                <!-- Top controls & Live Like Count (Touches top) -->
+                <div class="flex justify-between items-center px-4 py-3 bg-black">
+                    <button onclick="closePlayer()" class="flex items-center gap-2 text-gray-300 hover:text-white transition bg-white/10 px-3 py-1.5 rounded-full border border-white/10">
+                        <i class="ph ph-arrow-left text-lg"></i> <span class="text-sm font-medium">Back</span>
+                    </button>
+                    
+                    <!-- Real-Time Like Counter -->
+                    <div class="flex items-center gap-2 text-pink-400 bg-pink-500/10 border border-pink-500/30 px-3 py-1.5 rounded-full text-sm font-bold shadow-[0_0_10px_rgba(236,72,153,0.2)]">
+                        <span class="relative flex h-2.5 w-2.5">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-pink-500"></span>
+                        </span>
+                        <span id="live-like-count">0</span>
+                    </div>
+                </div>
+                
+                <!-- Video Container Edge to Edge -->
+                <div class="w-full bg-black shadow-2xl">
+                    <div class="video-container group w-full">
+                        <video id="tv-player" controls crossorigin playsinline></video>
+                        <div id="player-error" class="absolute inset-0 bg-black/90 flex flex-col items-center justify-center hidden z-10">
+                            <i class="ph ph-warning-circle text-5xl text-red-500 mb-3 animate-pulse"></i>
+                            <p class="text-white text-center px-6 font-medium" id="error-text">Stream unavailable or blocked by CORS.</p>
+                            <button onclick="playChannel(currentChannel)" class="mt-4 bg-white/10 hover:bg-white/20 border border-white/20 px-4 py-2 rounded-full text-sm transition">Retry Stream</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Channel Details and Controls -->
+                    <div class="glass p-4 border-b border-white/10">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center gap-3">
+                                <img id="player-logo" src="" alt="logo" class="w-12 h-12 object-contain bg-black/50 rounded-lg p-1" onerror="this.src='https://via.placeholder.com/150?text=TV'">
+                                <div>
+                                    <h2 id="player-title" class="text-xl font-bold">Channel Name</h2>
+                                    <p id="player-category" class="text-sm text-blue-400">Category</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Player Controls -->
+                        <div class="flex justify-around items-center mt-6 py-4 border-t border-white/10">
+                            <button onclick="toggleLikeCurrent()" class="flex flex-col items-center gap-1 text-gray-400 hover:text-pink-500 transition group" id="btn-like">
+                                <i class="ph ph-heart text-2xl group-active:scale-75 transition-transform"></i>
+                                <span class="text-xs">Like</span>
+                            </button>
+                            <button onclick="toggleSaveCurrent()" class="flex flex-col items-center gap-1 text-gray-400 hover:text-blue-500 transition group" id="btn-save">
+                                <i class="ph ph-bookmark text-2xl group-active:scale-75 transition-transform"></i>
+                                <span class="text-xs">Save</span>
+                            </button>
+                            <button onclick="toggleMiniScreen()" class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition">
+                                <i class="ph ph-picture-in-picture text-2xl"></i>
+                                <span class="text-xs">Mini</span>
+                            </button>
+                            <button onclick="toggleFullScreen()" class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition">
+                                <i class="ph ph-corners-out text-2xl"></i>
+                                <span class="text-xs">Full</span>
+                            </button>
+                            <button class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition">
+                                <i class="ph ph-gear text-2xl"></i>
+                                <span class="text-xs">Auto</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Channels with padding -->
+                <div class="px-4">
+                    <h3 class="text-xl font-bold mt-8 mb-4">Related Channels</h3>
+                    <div id="related-channels" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8"></div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Bottom Navigation -->
+        <footer class="glass-heavy fixed bottom-0 left-0 right-0 z-30 pb-safe">
+            <div class="flex justify-around items-center p-3">
+                <button onclick="switchTab('home')" class="nav-btn flex flex-col items-center text-gray-400 hover:text-white transition w-16" data-tab="home">
+                    <i class="ph ph-house text-2xl mb-1"></i>
+                    <span class="text-[10px] font-medium">Home</span>
+                </button>
+                <button onclick="switchTab('save')" class="nav-btn flex flex-col items-center text-gray-400 hover:text-white transition w-16" data-tab="save">
+                    <i class="ph ph-bookmark-simple text-2xl mb-1"></i>
+                    <span class="text-[10px] font-medium">Save</span>
+                </button>
+                <button onclick="switchTab('search')" class="nav-btn flex flex-col items-center text-gray-400 hover:text-white transition w-16" data-tab="search">
+                    <i class="ph ph-magnifying-glass text-2xl mb-1"></i>
+                    <span class="text-[10px] font-medium">Search</span>
+                </button>
+                <button onclick="switchTab('settings')" class="nav-btn flex flex-col items-center text-gray-400 hover:text-white transition w-16" data-tab="settings">
+                    <i class="ph ph-gear text-2xl mb-1"></i>
+                    <span class="text-[10px] font-medium">Setting</span>
+                </button>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Message Toast -->
+    <div id="toast" class="fixed top-5 left-1/2 transform -translate-x-1/2 glass px-6 py-3 rounded-full text-white font-medium shadow-2xl transition-all duration-300 opacity-0 translate-y-[-20px] pointer-events-none z-[100]">
+        Message
+    </div>
+
+    <script>
+        // --- State Management ---
+        let allChannels = [];
+        let categories = new Set();
+        let savedChannels = JSON.parse(localStorage.getItem('jd_saved')) || [];
+        let likedChannels = JSON.parse(localStorage.getItem('jd_liked')) || [];
+        let appSettings = JSON.parse(localStorage.getItem('jd_settings')) || { darkMode: false, autoplay: true };
+        let currentChannel = null;
+        let hls = null;
+        let lastTabBeforePlayer = 'home'; // To track back button history
+        
+        // Live Like System Variables
+        let liveLikeInterval = null;
+        let currentLiveLikes = 0;
+
+        // --- Initialization ---
+        document.addEventListener('DOMContentLoaded', () => {
+            applySettings();
+        });
+
+        function startApp() {
+            document.getElementById('welcome-screen').classList.add('opacity-0');
+            setTimeout(() => {
+                document.getElementById('welcome-screen').classList.add('hidden');
+                document.getElementById('main-app').classList.remove('hidden');
+                switchTab('home');
+                fetchChannels();
+            }, 500);
+        }
+
+        // --- Fetch & Parse M3U Logic ---
+        async function fetchChannels() {
+            document.getElementById('loading-indicator').classList.remove('hidden');
+            const jioUrl = "https://raw.githubusercontent.com/Raisanbd/moive-rplex/refs/heads/main/Sports.m3u";
+            
+            const methods = [
+                { name: 'CodeTabs', url: 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(jioUrl) },
+                { name: 'CORS Proxy.io', url: 'https://corsproxy.io/?' + encodeURIComponent(jioUrl) },
+                { name: 'AllOrigins', url: 'https://api.allorigins.win/raw?url=' + encodeURIComponent(jioUrl) },
+                { name: 'Direct', url: jioUrl }
+            ];
+
+            let m3uData = null;
+
+            for (const method of methods) {
+                try {
+                    console.log(`Trying to fetch via ${method.name}...`);
+                    const response = await fetch(method.url);
+                    if (response.ok) {
+                        m3uData = await response.text();
+                        console.log(`Success with ${method.name}`);
+                        break;
+                    }
+                } catch (e) {
+                    console.log(`${method.name} failed.`);
+                }
+            }
+
+            document.getElementById('loading-indicator').classList.add('hidden');
+
+            if (m3uData) {
+                parseM3U(m3uData);
+                renderDrawer();
+                renderHome();
+                renderSaved();
+            } else {
+                showToast("Failed to load channels. Please check internet.");
+            }
+        }
+
+        function parseM3U(data) {
+            const lines = data.split('\n');
+            let currentCh = {};
+            allChannels = [];
+            categories.clear();
+
+            for (let i = 0; i < lines.length; i++) {
+                let line = lines[i].trim();
+                if (line.startsWith('#EXTINF:')) {
+                    const logoMatch = line.match(/tvg-logo="(.*?)"/);
+                    const groupMatch = line.match(/group-title="(.*?)"/);
+                    const nameParts = line.split(',');
+                    const name = nameParts.length > 1 ? nameParts[1].trim() : 'Unknown Channel';
+                    
+                    currentCh = {
+                        id: 'ch_' + Math.random().toString(36).substr(2, 9),
+                        name: name,
+                        logo: logoMatch ? logoMatch[1] : '',
+                        group: groupMatch ? groupMatch[1] : 'Others'
+                    };
+                    categories.add(currentCh.group);
+                } else if (line.startsWith('http')) {
+                    currentCh.url = line;
+                    if(currentCh.name) allChannels.push(currentCh);
+                    currentCh = {};
+                }
+            }
+        }
+
+        // --- UI Rendering ---
+        function createChannelCard(ch) {
+            const isSaved = savedChannels.some(s => s.url === ch.url);
+            return `
+                <div class="glass rounded-xl p-3 cursor-pointer hover:bg-white/10 transition group" onclick='playChannel(${JSON.stringify(ch).replace(/'/g, "&apos;")})'>
+                    <div class="aspect-video bg-black/40 rounded-lg flex items-center justify-center mb-3 overflow-hidden relative">
+                        <img src="${ch.logo}" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'100\\' height=\\'100\\'><rect width=\\'100\\' height=\\'100\\' fill=\\'%23333\\'/><text x=\\'50\\' y=\\'55\\' font-family=\\'Arial\\' font-size=\\'20\\' fill=\\'white\\' text-anchor=\\'middle\\'>TV</text></svg>'" class="h-full object-contain p-2 group-hover:scale-110 transition duration-300">
+                        ${isSaved ? '<i class="ph-fill ph-bookmark absolute top-2 right-2 text-blue-400"></i>' : ''}
+                    </div>
+                    <h3 class="font-semibold text-sm truncate">${ch.name}</h3>
+                    <p class="text-xs text-gray-400 truncate">${ch.group}</p>
+                </div>
+            `;
+        }
+
+        function renderDrawer() {
+            const list = document.getElementById('category-list');
+            let html = `<div class="p-3 hover:bg-white/10 rounded cursor-pointer transition mb-1" onclick="filterCategory('All')">All Channels</div>`;
+            Array.from(categories).sort().forEach(cat => {
+                if(cat.trim() !== "") {
+                    html += `<div class="p-3 hover:bg-white/10 rounded cursor-pointer transition mb-1" onclick="filterCategory('${cat}')">${cat}</div>`;
+                }
+            });
+            list.innerHTML = html;
+        }
+
+        function renderHome() {
+            // Get 10 random/popular channels
+            const shuffled = [...allChannels].sort(() => 0.5 - Math.random());
+            const popular = shuffled.slice(0, 10);
+            document.getElementById('popular-channels').innerHTML = popular.map(createChannelCard).join('');
+        }
+
+        function renderSaved() {
+            const container = document.getElementById('saved-channels');
+            const noSaved = document.getElementById('no-saved');
+            if (savedChannels.length === 0) {
+                container.innerHTML = '';
+                noSaved.classList.remove('hidden');
+            } else {
+                noSaved.classList.add('hidden');
+                container.innerHTML = savedChannels.map(createChannelCard).join('');
+            }
+        }
+
+        // --- Interactions ---
+        function toggleDrawer() {
+            const drawer = document.getElementById('drawer');
+            const overlay = document.getElementById('drawer-overlay');
+            if (drawer.classList.contains('-translate-x-full')) {
+                drawer.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+                setTimeout(() => overlay.classList.remove('opacity-0'), 10);
+            } else {
+                drawer.classList.add('-translate-x-full');
+                overlay.classList.add('opacity-0');
+                setTimeout(() => overlay.classList.add('hidden'), 300);
+            }
+        }
+
+        function filterCategory(cat) {
+            toggleDrawer();
+            switchTab('category-view'); // Open the specific category page
+            
+            document.getElementById('category-page-title').innerText = `${cat} Channels`;
+            const container = document.getElementById('category-page-channels');
+            
+            const filtered = cat === 'All' ? allChannels : allChannels.filter(c => c.group === cat);
+            container.innerHTML = filtered.slice(0, 100).map(createChannelCard).join(''); // Limit for performance
+        }
+
+        function handleSearch(query) {
+            query = query.toLowerCase();
+            const results = allChannels.filter(c => c.name.toLowerCase().includes(query) || c.group.toLowerCase().includes(query)).slice(0, 40);
+            document.getElementById('search-results').innerHTML = results.map(createChannelCard).join('');
+        }
+
+        function switchTab(tabId) {
+            const mainHeader = document.getElementById('main-header');
+            const mainContent = document.getElementById('content');
+
+            // Save last tab if we are going to player so 'Back' works properly
+            if (tabId === 'player') {
+                const activeTab = document.querySelector('.tab-content:not(.hidden)');
+                if (activeTab && activeTab.id !== 'tab-player') {
+                    lastTabBeforePlayer = activeTab.id.replace('tab-', '');
+                }
+                // Hide header and remove main padding so player touches the edges
+                mainHeader.classList.add('hidden');
+                mainContent.classList.remove('p-4');
+                mainContent.classList.add('pb-4'); // Keep bottom padding for nav
+            } else {
+                // Show header and restore padding
+                mainHeader.classList.remove('hidden');
+                mainContent.classList.add('p-4');
+                mainContent.classList.remove('pb-4');
+            }
+
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            
+            // Remove active class from nav
+            document.querySelectorAll('.nav-btn').forEach(el => {
+                el.classList.remove('text-blue-400');
+                el.classList.add('text-gray-400');
+                let icon = el.querySelector('i');
+                icon.classList.remove('ph-fill');
+                icon.classList.add('ph');
+            });
+
+            // Show selected tab
+            document.getElementById(`tab-${tabId}`).classList.remove('hidden');
+            
+            // Highlight nav if exists
+            const btn = document.querySelector(`.nav-btn[data-tab="${tabId}"]`);
+            if (btn) {
+                btn.classList.remove('text-gray-400');
+                btn.classList.add('text-blue-400');
+                let icon = btn.querySelector('i');
+                icon.classList.remove('ph');
+                icon.classList.add('ph-fill');
+            }
+
+            // --- STOP VIDEO LOGIC ---
+            // If leaving player tab, completely stop the video and destroy instance
+            if (tabId !== 'player') {
+                const video = document.getElementById('tv-player');
+                if (hls) { 
+                    hls.destroy(); 
+                    hls = null; 
+                }
+                video.pause();
+                video.removeAttribute('src'); // Completely unloads video
+                video.load();
+                
+                // Stop fake live likes
+                if(liveLikeInterval) clearInterval(liveLikeInterval);
+            }
+
+            if(tabId === 'save') renderSaved();
+        }
+
+        // --- Player Logic ---
+        function playChannel(channel) {
+            currentChannel = channel;
+            switchTab('player');
+            
+            document.getElementById('player-title').innerText = channel.name;
+            document.getElementById('player-category').innerText = channel.group;
+            document.getElementById('player-logo').src = channel.logo;
+            
+            updatePlayerButtons();
+            startLiveLikeCounter(); // Start live likes animation
+            
+            // Related channels
+            const related = allChannels.filter(c => c.group === channel.group && c.url !== channel.url).slice(0, 10);
+            document.getElementById('related-channels').innerHTML = related.map(createChannelCard).join('');
+
+            const video = document.getElementById('tv-player');
+            const errorMsg = document.getElementById('player-error');
+            const errorText = document.getElementById('error-text');
+            errorMsg.classList.add('hidden');
+            
+            if (hls) { hls.destroy(); }
+            
+            // Function to try playing stream, with optional CORS proxy fallback
+            function loadStream(url, isProxy = false) {
+                if (Hls.isSupported()) {
+                    hls = new Hls();
+                    hls.loadSource(url);
+                    hls.attachMedia(video);
+                    hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                        if(appSettings.autoplay) video.play();
+                    });
+                    hls.on(Hls.Events.ERROR, function (event, data) {
+                        if (data.fatal) {
+                            // --- CORS FIX LOGIC ---
+                            if (!isProxy) {
+                                console.log("Direct stream failed (possible CORS). Trying proxy...");
+                                hls.destroy();
+                                const proxyUrl = 'https://corsproxy.io/?' + encodeURIComponent(channel.url);
+                                loadStream(proxyUrl, true);
+                            } else {
+                                // Both failed
+                                errorMsg.classList.remove('hidden');
+                                errorText.innerText = "Stream unavailable or blocked by CORS.";
+                            }
+                        }
+                    });
+                } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                    video.src = url;
+                    video.addEventListener('loadedmetadata', function () {
+                        if(appSettings.autoplay) video.play();
+                    });
+                    video.addEventListener('error', function() {
+                        if(!isProxy) {
+                            const proxyUrl = 'https://corsproxy.io/?' + encodeURIComponent(channel.url);
+                            loadStream(proxyUrl, true);
+                        } else {
+                            errorMsg.classList.remove('hidden');
+                            errorText.innerText = "Stream unavailable or blocked by CORS.";
+                        }
+                    });
+                }
+            }
+
+            loadStream(channel.url, false);
+        }
+
+        function closePlayer() {
+            switchTab(lastTabBeforePlayer); // The switchTab function now handles video stopping entirely
+        }
+
+        // --- Live Like Counter Logic ---
+        function startLiveLikeCounter() {
+            if(liveLikeInterval) clearInterval(liveLikeInterval);
+            
+            // Generate a random starting number between 1200 and 5000
+            currentLiveLikes = Math.floor(Math.random() * (5000 - 1200 + 1) + 1200);
+            document.getElementById('live-like-count').innerText = currentLiveLikes.toLocaleString();
+            
+            liveLikeInterval = setInterval(() => {
+                // 60% chance to increment likes every 2.5 seconds to feel natural
+                if(Math.random() > 0.4) {
+                    currentLiveLikes += Math.floor(Math.random() * 4) + 1; // Add 1 to 4 likes
+                    document.getElementById('live-like-count').innerText = currentLiveLikes.toLocaleString();
+                }
+            }, 2500);
+        }
+
+        // --- Player Controls ---
+        function updatePlayerButtons() {
+            if(!currentChannel) return;
+            const isSaved = savedChannels.some(s => s.url === currentChannel.url);
+            const isLiked = likedChannels.some(s => s.url === currentChannel.url);
+            
+            const saveBtn = document.getElementById('btn-save');
+            const likeBtn = document.getElementById('btn-like');
+
+            saveBtn.innerHTML = `<i class="${isSaved ? 'ph-fill text-blue-500' : 'ph text-gray-400'} ph-bookmark text-2xl group-active:scale-75 transition-transform"></i><span class="text-xs">Save${isSaved?'d':''}</span>`;
+            likeBtn.innerHTML = `<i class="${isLiked ? 'ph-fill text-pink-500' : 'ph text-gray-400'} ph-heart text-2xl group-active:scale-75 transition-transform"></i><span class="text-xs">Like${isLiked?'d':''}</span>`;
+        }
+
+        function toggleSaveCurrent() {
+            if(!currentChannel) return;
+            const index = savedChannels.findIndex(s => s.url === currentChannel.url);
+            if(index > -1) {
+                savedChannels.splice(index, 1);
+                showToast("Removed from Saved");
+            } else {
+                savedChannels.push(currentChannel);
+                showToast("Added to Saved");
+            }
+            localStorage.setItem('jd_saved', JSON.stringify(savedChannels));
+            updatePlayerButtons();
+            renderSaved(); 
+        }
+
+        function toggleLikeCurrent() {
+            if(!currentChannel) return;
+            const index = likedChannels.findIndex(s => s.url === currentChannel.url);
+            if(index > -1) {
+                likedChannels.splice(index, 1);
+            } else {
+                likedChannels.push(currentChannel);
+                // Immediately add +1 to live counter when user clicks like
+                currentLiveLikes += 1;
+                document.getElementById('live-like-count').innerText = currentLiveLikes.toLocaleString();
+            }
+            localStorage.setItem('jd_liked', JSON.stringify(likedChannels));
+            updatePlayerButtons();
+        }
+
+        // Fixed Full Screen logic for better device compatibility
+        function toggleFullScreen() {
+            const video = document.getElementById('tv-player');
+            if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+                if (video.requestFullscreen) {
+                    video.requestFullscreen();
+                } else if (video.webkitRequestFullscreen) { /* Safari */
+                    video.webkitRequestFullscreen();
+                } else if (video.msRequestFullscreen) { /* IE11 */
+                    video.msRequestFullscreen();
+                }
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) { /* Safari */
+                    document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) { /* IE11 */
+                    document.msExitFullscreen();
+                }
+            }
+        }
+
+        // Fixed Mini Screen (PiP) logic
+        async function toggleMiniScreen() {
+            const video = document.getElementById('tv-player');
+            try {
+                if (document.pictureInPictureElement) {
+                    await document.exitPictureInPicture();
+                } else if (document.pictureInPictureEnabled && !video.disablePictureInPicture) {
+                    await video.requestPictureInPicture();
+                } else {
+                    showToast("Mini screen (PiP) is not supported on this browser/device.");
+                }
+            } catch (error) {
+                console.error(error);
+                showToast("Failed to open Mini Screen.");
+            }
+        }
+
+        // --- Settings Logic ---
+        function toggleSetting(key, val) {
+            appSettings[key] = val;
+            localStorage.setItem('jd_settings', JSON.stringify(appSettings));
+            applySettings();
+        }
+
+        function applySettings() {
+            document.getElementById('setting-darkmode').checked = appSettings.darkMode;
+            document.getElementById('setting-autoplay').checked = appSettings.autoplay;
+            
+            if(appSettings.darkMode) {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+            }
+        }
+
+        function clearCache() {
+            localStorage.removeItem('jd_saved');
+            localStorage.removeItem('jd_liked');
+            savedChannels = [];
+            likedChannels = [];
+            showToast("Cache Cleared. Storage freed.");
+            renderSaved();
+        }
+
+        function exportFavorites() {
+            if(savedChannels.length === 0) {
+                showToast("No favorites to export.");
+                return;
+            }
+            let m3uContent = "#EXTM3U\n";
+            savedChannels.forEach(ch => {
+                m3uContent += `#EXTINF:-1 tvg-logo="${ch.logo}" group-title="${ch.group}",${ch.name}\n${ch.url}\n`;
+            });
+            const blob = new Blob([m3uContent], {type: "text/plain;charset=utf-8"});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "JDLivetv_Favorites.m3u";
+            a.click();
+            URL.revokeObjectURL(url);
+            showToast("Favorites exported successfully!");
+        }
+
+        // --- Utils ---
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            toast.innerText = msg;
+            toast.classList.remove('opacity-0', 'translate-y-[-20px]');
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-[-20px]');
+            }, 3000);
+        }
+
+    </script>
+</body>
+</html>
