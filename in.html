@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="Cric stream Favicon.jpg">
+    <title>Premium IPTV Player</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        #player-container {
+            width: 100%;
+            background: #000;
+        }
+
+        #jwplayerDiv {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+        }
+
+        .action-bar {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 15px;
+            border-bottom: 1px solid #333;
+        }
+
+       
+
+      
+        }
+
+        .counter-section {
+            padding: 10px;
+            background: #121212;
+            font-size: 14px;
+        }
+
+        .ad-wrapper {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(15, 15, 15, 0.95);
+            border-top: 1px solid #333;
+            padding: 5px 0;
+            z-index: 9999;
+            text-align: center;
+        }
+    </style>
+    <script src="https://cdn.jwplayer.com/libraries/SAHhwvZq.js"></script>
+</head>
+<body>
+
+    <div id="player-container">
+        <div id="jwplayerDiv"></div>
+    </div>
+
+    
+        </a>
+    </div>
+
+    
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        const hlsStreamUrl = getQueryParam("file");
+
+        if (!hlsStreamUrl) {
+            console.error("No HLS stream URL provided.");
+        } else {
+            const playerInstance = jwplayer("jwplayerDiv");
+
+            playerInstance.setup({
+                file: hlsStreamUrl,
+                width: "100%",
+                aspectratio: "16:9",
+                autostart: true,
+                mute: false,
+                skin: {
+                    name: "glow",
+                    active: "#0074d9",
+                    inactive: "#ffffff",
+                    background: "#000000"
+                },
+                type: "hls",
+                preload: "auto"
+            });
+
+            // ফুল-স্ক্রিন রোটেট কন্ট্রোল
+            playerInstance.on('fullscreen', function(event) {
+                if (event.fullscreen) {
+                    // ল্যান্ডস্কেপ মোড করার চেষ্টা করবে
+                    if (screen.orientation && screen.orientation.lock) {
+                        screen.orientation.lock('landscape').catch(err => {
+                            console.log("Orientation lock failed: ", err);
+                        });
+                    }
+                } else {
+                    // ফুল-স্ক্রিন থেকে বের হলে আনলক করবে
+                    if (screen.orientation && screen.orientation.unlock) {
+                        screen.orientation.unlock();
+                    }
+                }
+            });
+
+            playerInstance.on('error', function(error) {
+                document.getElementById('jwplayerDiv').innerHTML = `<div style="padding:40px; text-align:center; background:#000;">প্লেয়ার লোড হতে সমস্যা হচ্ছে। দয়া করে পেজটি রিফ্রেশ করুন।</div>`;
+            });
+        }
+
+        // Security
+        document.addEventListener("contextmenu", e => e.preventDefault());
+        document.addEventListener("keydown", e => {
+            if (e.key === "F12" || (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) || (e.ctrlKey && e.key === "U")) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+   
+</body>
+</html>
