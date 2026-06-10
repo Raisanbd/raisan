@@ -3,499 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIFA World Cup 2026 Direct - Live Sports</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Cric stream Favicon.jpg">
+    <title>Premium IPTV Player</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500;700&family=Hind+Siliguri:wght=500;700&display=swap');
-
         body {
             margin: 0;
-            padding: 10px;
-            background: radial-gradient(circle at center, #1a0826 0%, #08020f 100%);
-            font-family: 'Hind Siliguri', sans-serif;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            box-sizing: border-box;
+            padding: 0;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            overflow-x: hidden;
         }
 
-        .fifa-mega-container {
+        #player-container {
             width: 100%;
-            max-width: 100%;
-            margin: 10px auto;
-            padding: 0 10px;
-            box-sizing: border-box;
-        }
-
-        .fifa-main-banner {
-            width: 100%;
-            background: linear-gradient(135deg, #2d0b3d 0%, #0f021a 50%, #1c052e 100%);
-            border: 3px solid #d91b5c;
-            border-radius: 16px;
-            position: relative;
-            padding: 40px 20px;
-            box-sizing: border-box;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 25px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), inset 0 0 30px rgba(217, 27, 92, 0.2);
-        }
-
-        .shape-left {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20%;
-            height: 100%;
-            background: linear-gradient(135deg, #a811da, #d91b5c);
-            clip-path: polygon(0 0, 100% 0%, 75% 100%, 0 100%);
-            opacity: 0.15;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .shape-right {
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 20%;
-            height: 100%;
-            background: linear-gradient(135deg, #00d2ff, #0066ff);
-            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0 100%);
-            opacity: 0.15;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        /* Telegram Icon Graphics Definition */
-        .telegram-btn {
-            position: absolute;
-            left: 25px;
-            top: 25px;
-            background: #0088cc;
-            color: #fff;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 10px 18px;
-            border-radius: 30px;
-            font-size: 14px;
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0, 136, 204, 0.4);
-            transition: all 0.3s ease;
-            z-index: 10;
-        }
-
-        .telegram-btn:hover {
-            transform: scale(1.05);
-            background: #00a2f3;
-            box-shadow: 0 6px 20px rgba(0, 136, 204, 0.6);
-        }
-
-        .telegram-svg {
-            width: 20px;
-            height: 20px;
-            fill: #fff;
-        }
-
-        .banner-title {
-            color: #fff;
-            font-size: 38px;
-            font-weight: 700;
-            text-shadow: 0 3px 10px rgba(0,0,0,0.9);
-            text-align: center;
-            z-index: 5;
-            margin-top: 15px;
-        }
-
-        .center-trophy-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            z-index: 5;
-        }
-
-        .center-trophy {
-            height: 140px;
-            object-fit: contain;
-            animation: floatUpDown 3s ease-in-out infinite, tryGlowEffect 2s ease-in-out infinite;
-        }
-
-        @keyframes floatUpDown {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-12px); }
-        }
-
-        @keyframes tryGlowEffect {
-            0%, 100% { filter: drop-shadow(0 0 10px rgba(255,215,0,0.4)); }
-            50% { filter: drop-shadow(0 0 25px rgba(255,215,0,0.8)) contrast(1.1); }
-        }
-
-        .sports-message {
-            color: #ffd700;
-            font-size: 16px;
-            font-weight: 700;
-            text-align: center;
-            margin-top: 12px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
-        }
-
-        .countdown-container {
-            display: flex;
-            gap: 12px;
-            z-index: 5;
-        }
-
-        .time-box {
-            background: rgba(0, 0, 0, 0.6);
-            border: 2px solid #d91b5c;
-            border-radius: 8px;
-            padding: 8px 15px;
-            min-width: 65px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-        }
-
-        .time-number {
-            font-family: 'Teko', sans-serif;
-            font-size: 34px;
-            font-weight: 700;
-            color: #ffd700;
-            line-height: 1;
-        }
-
-        .time-label {
-            font-size: 12px;
-            color: #ccc;
-            margin-top: 4px;
-        }
-
-        .channels-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            width: 100%;
-            max-width: 1200px;
-            z-index: 10;
-            margin-top: 15px;
-        }
-
-        .channel-card {
-            background: rgba(15, 5, 25, 0.8);
-            border: 2px solid rgba(255, 255, 255, 0.08);
-            border-radius: 14px;
-            padding: 20px 10px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 12px;
-            position: relative;
-        }
-
-        .channel-card:hover {
-            transform: translateY(-5px);
-            border-color: #d91b5c;
-            background: rgba(217, 27, 92, 0.15);
-            box-shadow: 0 8px 25px rgba(217, 27, 92, 0.4);
-        }
-
-        /* PNG Channel Logo Wrapper Stylings */
-        .channel-logo-wrap {
-            width: 60px;
-            height: 60px;
-            background: #12041c;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid #d91b5c;
-            overflow: hidden;
-            padding: 5px;
-            box-sizing: border-box;
-        }
-
-        .channel-logo-wrap img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-
-        .channel-name {
-            font-size: 16px;
-            font-weight: 700;
-            color: #fff;
-        }
-
-        .live-badge {
-            background: #ff0000;
-            color: #fff;
-            font-size: 11px;
-            padding: 2px 10px;
-            border-radius: 20px;
-            font-weight: 700;
-            text-transform: uppercase;
-            animation: blink 1.5s infinite;
-        }
-
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.4; }
-        }
-
-        .video-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.95);
-            z-index: 99999;
-            display: none;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .player-container {
-            width: 90%;
-            max-width: 850px;
-            aspect-ratio: 16/9;
             background: #000;
-            position: relative;
-            border: 3px solid #d91b5c;
-            border-radius: 12px;
-            overflow: visible;
-            box-shadow: 0 0 40px rgba(217, 27, 92, 0.6);
         }
 
-        .player-container iframe {
+        #jwplayerDiv {
             width: 100%;
-            height: 100%;
-            border: none;
+            aspect-ratio: 16 / 9;
         }
 
-        .close-player-btn {
-            position: absolute;
-            top: -45px;
-            right: 0;
-            background: #ff0000;
-            color: #fff;
-            border: none;
-            font-size: 20px;
-            font-weight: bold;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.2s;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-            z-index: 100000;
+        .action-bar {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 15px;
+            border-bottom: 1px solid #333;
         }
 
-        .close-player-btn:hover {
-            background: #cc0000;
+       
+
+      
         }
 
-        @media (max-width: 992px) {
-            .channels-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
+        .counter-section {
+            padding: 10px;
+            background: #121212;
+            font-size: 14px;
         }
 
-        @media (max-width: 768px) {
-            .telegram-btn {
-                position: static;
-                margin-bottom: 10px;
-            }
-            .fifa-main-banner {
-                padding: 30px 15px;
-            }
-            .banner-title {
-                font-size: 26px;
-            }
-            .channels-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 12px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .channels-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .time-box {
-                min-width: 55px;
-                padding: 6px 10px;
-            }
-            .time-number {
-                font-size: 26px;
-            }
-            .player-container {
-                width: 95%;
-            }
+        .ad-wrapper {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(15, 15, 15, 0.95);
+            border-top: 1px solid #333;
+            padding: 5px 0;
+            z-index: 9999;
+            text-align: center;
         }
     </style>
+    <script src="https://cdn.jwplayer.com/libraries/SAHhwvZq.js"></script>
 </head>
 <body>
 
-    <div class="fifa-mega-container">
-        <div class="fifa-main-banner">
-            <div class="shape-left"></div>
-            <div class="shape-right"></div>
-            
-            <a href="https://t.me/rrplex" target="_blank" class="telegram-btn">
-                <svg class="telegram-svg" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.11.02-1.93 1.23-5.46 3.62-.51.35-.98.52-1.4.51-.46-.01-1.35-.26-2.01-.48-.81-.27-1.46-.42-1.4-.88.03-.24.36-.49.99-.75 3.88-1.69 6.46-2.8 7.74-3.32 3.69-1.5 4.45-1.76 4.95-1.77.11 0 .36.03.52.16.13.1.17.24.19.34.02.07.02.21 0 .3z"/>
-                </svg>
-                Telegram Channel
-            </a>
-
-            <div class="banner-title">ফিফা বিশ্বকাপ ২০২৬ সরাসরি দেখেন</div>
-
-            <div class="center-trophy-box">
-                <img class="center-trophy" src="https://i.ibb.co.com/nNRtCVqf/FIFA-2026-World-Cup-White-Logo.png" alt="FIFA Trophy">
-                <div class="sports-message">লাইভ খেলা উপভোগ করুন</div>
-            </div>
-
-            <div class="countdown-container">
-                <div class="time-box"><div class="time-number" id="days">00</div><div class="time-label">দিন</div></div>
-                <div class="time-box"><div class="time-number" id="hours">00</div><div class="time-label">ঘণ্টা</div></div>
-                <div class="time-box"><div class="time-number" id="minutes">00</div><div class="time-label">মিনিট</div></div>
-                <div class="time-box"><div class="time-number" id="seconds">00</div><div class="time-label">সেকেন্ড</div></div>
-            </div>
-
-            <div class="channels-grid">
-                <div class="channel-card" data-link="https://example.com/player.php?id=tsports">
-                    <div class="channel-logo-wrap">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/T_Sports_logo.svg/1280px-T_Sports_logo.svg.png" alt="T Sports Logo">
-                    </div>
-                    <div class="channel-name">টি স্পোর্টস (T Sports)</div>
-                    <div class="live-badge">Live</div>
-                </div>
-                <div class="channel-card" data-link="https://example.com/player.php?id=gtv">
-                    <div class="channel-logo-wrap">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/SOMOY_TV_Logo.svg/1280px-SOMOY_TV_Logo.svg.png" alt="GTV Logo">
-                    </div>
-                    <div class="channel-name">সময় টিভি (SOMOI TV)</div>
-                    <div class="live-badge">Live</div>
-                </div>
-                <div class="channel-card" data-link="https://example.com/player.php?id=rabbithole">
-                    <div class="channel-logo-wrap">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Bangladesh_Television_Logo.svg/1280px-Bangladesh_Television_Logo.svg.png">
-                    </div>
-                    <div class="channel-name">বিটিভি (BTV)</div>
-                    <div class="live-badge">Live</div>
-                </div>
-                <div class="channel-card" data-link="https://example.com/player.php?id=sonyliv">
-                    <div class="channel-logo-wrap">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Logo_of_Toffee.svg/3840px-Logo_of_Toffee.svg.png" alt="SonyLIV Logo">
-                    </div>
-                    <div class="channel-name">টফি (TOFFEE)</div>
-                    <div class="live-badge">Live</div>
-                </div>
-                <div class="channel-card" data-link="https://example.com/player.php?id=sports18">
-                    <div class="channel-logo-wrap">
-                        <img src="https://i.ibb.co.com/nNRtCVqf/FIFA-2026-World-Cup-White-Logo.png" alt="Sports18 Logo">
-                    </div>
-                    <div class="channel-name">স্পোর্টস ১৮ (Sports18)</div>
-                    <div class="live-badge">Live</div>
-                </div>
-                <div class="channel-card" data-link="https://example.com/player.php?id=ddsports">
-                    <div class="channel-logo-wrap">
-                        <img src="https://i.ibb.co.com/nNRtCVqf/FIFA-2026-World-Cup-White-Logo.png" alt="DD Sports Logo">
-                    </div>
-                    <div class="channel-name">ডিডি স্পোর্টস</div>
-                    <div class="live-badge">Live</div>
-                </div>
-                <div class="channel-card" data-link="https://example.com/player.php?id=ptvsports">
-                    <div class="channel-logo-wrap">
-                        <img src="https://i.ibb.co.com/nNRtCVqf/FIFA-2026-World-Cup-White-Logo.png" alt="PTV Sports Logo">
-                    </div>
-                    <div class="channel-name">পিটিভি স্পোর্টস</div>
-                    <div class="live-badge">Live</div>
-                </div>
-                <div class="channel-card" data-link="https://example.com/player.php?id=bein">
-                    <div class="channel-logo-wrap">
-                        <img src="https://i.ibb.co.com/nNRtCVqf/FIFA-2026-World-Cup-White-Logo.png" alt="beIN Sports Logo">
-                    </div>
-                    <div class="channel-name">বিয়াইন স্পোর্টস (beIN)</div>
-                    <div class="live-badge">Live</div>
-                </div>
-            </div>
-        </div>
+    <div id="player-container">
+        <div id="jwplayerDiv"></div>
     </div>
 
-    <div class="video-overlay" id="videoOverlay">
-        <div class="player-container">
-            <button class="close-player-btn" id="closePlayerBtn">✕</button>
-            <iframe id="videoPlayerIframe" src="" allowfullscreen allow="autoplay; encrypted-media"></iframe>
-        </div>
+    
+        </a>
     </div>
+
+    
 
     <script>
-        const countDownDate = new Date("Jun 11, 2026 00:00:00").getTime();
-        const timerX = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = countDownDate - now;
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        const hlsStreamUrl = getQueryParam("file");
 
-            document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
-            document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
-            document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
-            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+        if (!hlsStreamUrl) {
+            console.error("No HLS stream URL provided.");
+        } else {
+            const playerInstance = jwplayer("jwplayerDiv");
 
-            if (distance < 0) {
-                clearInterval(timerX);
-                document.getElementById("days").innerHTML = "00";
-                document.getElementById("hours").innerHTML = "00";
-                document.getElementById("minutes").innerHTML = "00";
-                document.getElementById("seconds").innerHTML = "00";
-            }
-        }, 1000);
+            playerInstance.setup({
+                file: hlsStreamUrl,
+                width: "100%",
+                aspectratio: "16:9",
+                autostart: true,
+                mute: false,
+                skin: {
+                    name: "glow",
+                    active: "#0074d9",
+                    inactive: "#ffffff",
+                    background: "#000000"
+                },
+                type: "hls",
+                preload: "auto"
+            });
 
-        const overlay = document.getElementById('videoOverlay');
-        const iframe = document.getElementById('videoPlayerIframe');
-        const closeBtn = document.getElementById('closePlayerBtn');
-        const channelCards = document.querySelectorAll('.channel-card');
-
-        channelCards.forEach(card => {
-            card.addEventListener('click', function(e) {
-                const videoUrl = this.getAttribute('data-link');
-                if(videoUrl && videoUrl !== "#") {
-                    iframe.src = videoUrl;
-                    overlay.style.display = 'flex';
-                    document.body.style.overflow = 'hidden';
+            // ফুল-স্ক্রিন রোটেট কন্ট্রোল
+            playerInstance.on('fullscreen', function(event) {
+                if (event.fullscreen) {
+                    // ল্যান্ডস্কেপ মোড করার চেষ্টা করবে
+                    if (screen.orientation && screen.orientation.lock) {
+                        screen.orientation.lock('landscape').catch(err => {
+                            console.log("Orientation lock failed: ", err);
+                        });
+                    }
+                } else {
+                    // ফুল-স্ক্রিন থেকে বের হলে আনলক করবে
+                    if (screen.orientation && screen.orientation.unlock) {
+                        screen.orientation.unlock();
+                    }
                 }
             });
-        });
 
-        closeBtn.addEventListener('click', function() {
-            iframe.src = "";
-            overlay.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        });
+            playerInstance.on('error', function(error) {
+                document.getElementById('jwplayerDiv').innerHTML = `<div style="padding:40px; text-align:center; background:#000;">প্লেয়ার লোড হতে সমস্যা হচ্ছে। দয়া করে পেজটি রিফ্রেশ করুন।</div>`;
+            });
+        }
 
-        overlay.addEventListener('click', function(e) {
-            if(e.target === overlay) {
-                closeBtn.click();
+        // Security
+        document.addEventListener("contextmenu", e => e.preventDefault());
+        document.addEventListener("keydown", e => {
+            if (e.key === "F12" || (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) || (e.ctrlKey && e.key === "U")) {
+                e.preventDefault();
             }
         });
     </script>
 
+   
 </body>
 </html>
