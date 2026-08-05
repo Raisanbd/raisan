@@ -113,7 +113,10 @@ http://103.190.133.68:1935/news21live/live/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/g06jByt1/entertv.jpg"group-title="𝐁𝐚𝐧𝐠𝐥𝐚𝐝𝐞𝐬𝐡𝐢",Enter TV
 https://live1.entertv.com.bd/entertv/index.fmp4.m3u8
-############## indian Bangla ##############
+
+ ============================================================
+                 indian Bangla
+===========================================================
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/TD4STyMD/New-Project-13.png" group-title="Indian Bangla",Zee Bangla HD 01
 http://27.124.71.27/Zee_Bangla/index.m3u8
