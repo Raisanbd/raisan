@@ -81,7 +81,8 @@ https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/DDjNWq5s/New-Project-6.png" group-title="BANGLADESHI CHANNELS",MAASRANGA TV
 #EXTVLCOPT:http-user-agent=DevM3U-Player
 https://mtv.sunplex.live/MAASRANGA/index.m3u8
-
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/3/31/Deepto_TV_logo.png" group-title="Akash Go",Deepto TV
+https://byphdgllyk.gpcdn.net/hls/deeptotv/0_1/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/kVPpKD85/New-Project-7.png" group-title="BANGLADESHI CHANNELS",MY TV
 #EXTVLCOPT:http-user-agent=DevM3U-Player
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mytv-up-off.stream/tracks-v1a1/mono.m3u8
@@ -340,7 +341,38 @@ https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxI
 #EXTINF:-1 tvg-logo="https://bugsfreeweb.github.io/LiveTVCollector/BugsfreeLogo/default-logo.png" group-title="English News",Sky News
 
 ############## Sports ##############
-
+#EXTINF:-1 tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_9bd5db31bbc4d98defd1cb51a5606d9c_playmist_unite_sports_2.jpg" group-title="Uncategorized",Unite8 Sports 2
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=unite8_sports_2&format=.m3u8
+#EXTINF:-1 tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_d165c628a0db9286da3914ca916a4971_playmist_tsn_1400x400.jpg" group-title="Uncategorized",TSN 1
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=tsn_1&format=.m3u8
+#EXTINF:-1 tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_c92bf4f46958e65be6cc370e3fc1f0dd_playmist_tsn_2_400x400.jpg" group-title="Uncategorized",TSN 2
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=tsn_2&format=.m3u8
+#EXTINF:-1 tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-19/images_905f151dfde79e14a2b9e7b934683ba6_playmist_tsn3_300.jpg" group-title="Uncategorized",TSN 3
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=tsn_3&format=.m3u8
+#EXTINF:-1 tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_1bb4b50bd8e39a63808ed6fa38beb0df_playmist_willow_hd_tv_400x400.jpg" group-title="Uncategorized",Willow TV
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=willow_tv&format=.m3u8
+#EXTINF:-1 tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_02eb54f07cbc8c01db3c545aca60d37c_playmist_4g.jpg" group-title="Uncategorized",Bein Sports 1
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=bein_sports_1&format=.m3u8
+#EXTINF:-1 tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_aa4e43db11b3d698b78989797debf18c_playmist_espn400x400.jpg" group-title="Uncategorized",ESPN
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=espn&format=.m3u8
+#EXTINF:-1 tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_552c5631b1d8ba169911ab3d7bc3952a_playmist_a_sports_hd_400x400.jpg" group-title="Uncategorized",A Sports
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=a_sports&format=.m3u8
+#EXTINF:-1 tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_cadf0a534c4de626332004067cee3103_playmist_nfl_network400x400.jpg" group-title="Uncategorized",NFL Network
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=nfl_network&format=.m3u8
+#EXTINF:-1 tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_c1c4607b44cda506121e777ebeafffce_playmist_bleav_football_400x400.jpg" group-title="Uncategorized",Bleav Football
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=bleav_football&format=.m3u8
+#EXTINF:-1 tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/63dcbec8a9ed027c46e448fb003a0a64.jpg" group-title="Uncategorized",Cricket Gold
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=cricket_gold&format=.m3u8
+#EXTINF:-1 tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_5c48c1df205227964277087b833a9912_playmist_bt_sport_2400x400.jpg" group-title="Uncategorized",BT Sports 2
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=bt_sports_2&format=.m3u8
+#EXTINF:-1 tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_4af9a282522f487a6ed41692f99baad6_playmist_tnt_sports_1400x400.jpg" group-title="Uncategorized",TNT Sport 1
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=tnt_sport_1&format=.m3u8
+#EXTINF:-1 tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c3b7a42d7ce8dd21ce151178bca8715d_playmist_dd_sports_400x400.jpg" group-title="Uncategorized",DD Sports
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=dd_sports&format=.m3u8
+#EXTINF:-1 tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_bf450d05727fd678bee456e883af98e8_playmist_golf_channel_400x400.jpg" group-title="Uncategorized",Golf Channel
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=golf_channel&format=.m3u8
+#EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/d60be6284234186c03d07a4ad176bcb4" group-title="Uncategorized",Gazi TV
+http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=gazi_tv&format=.m3u8
 #EXTINF:-1 tvg-logo="https://e0.365dm.com/21/10/768x432/skysports-premier-league-sky-sports_5547250.jpg?20211018160525" group-title="Sports",Sky sports premier League
 https://1nyaler.streamhostingcdn.top/stream/38/index.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Sky_Sport_Basket_-_Logo_2026.svg/1280px-Sky_Sport_Basket_-_Logo_2026.svg.png?_=20260115221404" group-title="Sports",SkySports basket
@@ -415,15 +447,6 @@ https://tv.cdn.xsg.ge/gpb-2tv/index.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Rossi_and_Lorenzo_2010_French_GP.jpg/330px-Rossi_and_Lorenzo_2010_French_GP.jpg" group-title="Sports",MTR Sports-1 🇬🇧
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg02873-kravemedia-mtrspt1-distrotv/playlist.m3u8
 
-#EXTM3U
-# FIFA World Cup 2026 Live Streams
-# Updated: 2026-07-20 12:35:09 UTC
-# Manual: 21 | Auto: 0
-
-# #EXTM3U
-# FIFA World Cup 2026 Live Streams
-# Updated: 2026-07-20 12:35:09 UTC
-# Manual: 21 | Auto: 0
 
 # ═══ MANUALLY ADDED CHANNELS (protected) ═══
 
