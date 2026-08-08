@@ -135,7 +135,7 @@ http://103.151.61.12/SONY_AATH/tracks-v1a1/mono.m3u8?token=i7bZaZWaFrSIE0
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/Ps0MFQwn/New-Project-15.png" group-title="INDIAN CHANNELS",STAR JALSHA HD
 https://s3.itcnbd.live/server-4/stream/aHR0cDovLzE3Mi4xOS4xNy4yMzA6ODA5MC9obHMvU3RhckphbHNoYUhELm0zdTg.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/Ps0MFQwn/New-Project-15.png" group-title="INDIAN CHANNELS",STAR JALSHA 
-http://103.151.60.188:12345/hls/tab_5lat1ob/index.m3u8?t=1786203151507
+http://103.151.60.188:12345/hls/tab_g3agw7u/index.m3u8?t=1786203973469
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/JjbcX7XK/New-Project-20.png" group-title="Indian-Bangla",Enter 10 Bangla
 #https://amg01448-samsungin-enterr10bangla-samsungin-ad-gg.amagi.tv/playlist/amg01448-samsungin-enterr10bangla-samsungin/playlist.m3u8
 https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3u8
