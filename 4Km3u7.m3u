@@ -5,7 +5,8 @@
 #EXTINF:-1 group-title="OTT Movies Series" tvg-logo="https://pub-69b6234af505413bbeac2bbc8039195c.r2.dev/poster_20fd1785493169.jpg",  Look A Like (2026) Bengali Mosharaf Karim
 https://pub-f85680743e6f48c3b210af18613f778c.r2.dev/41507527efab4eeae403fb839f955f95?t=1786086975&token=3eb3628c18523cfe63d4642586178fddd810c4c1f4a44dcd7abbd30c65ab1bc3
 #EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/GvXb94MP/New-Project-23.png", Ptv Sports
-https://aboxbdix.ryvox-tb-8ae.workers.dev/live/ptv.m3u8?token=3a611eceda309f5a350835f41f1df360&time=1785904374&link_index=0
+
+http://103.151.60.188:12345/hls/tab_5lat1ob/index.m3u8?t=1786202925297
 #EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/N23H8ttr/New-Project-22.png", T-Sports HD
 https://aboxbdix.ryvox-tb-8ae.workers.dev/live/tsports.m3u8?token=21a16389d6a292104288caf25bfc7b26&time=1785903003&link_index=0
 #EXTINF:-1 tvg-id="tsports_live" tvg-name="Tsports Live" tvg-country="BD" tvg-logo="https://i.ibb.co.com/N23H8ttr/New-Project-22.png" tvg-chno="tspost_live" group-title="", T sports - server 2
