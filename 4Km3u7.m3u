@@ -127,7 +127,7 @@ https://live1.entertv.com.bd/entertv/index.fmp4.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/TD4STyMD/New-Project-13.png" group-title="Indian Bangla",Zee Bangla HD 01
 #https://stream.ottplus.live/live/zee_bangla_abr/live/zee_bangla_720/chunks.m3u8
-http://103.151.60.188:12345/hls/tab_5lat1ob/index.m3u8?t=1786203211783
+http://103.159.180.34:5001/live/625.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/TD4STyMD/New-Project-13.png" group-title="INDIAN CHANNELS",ZEE BANGLA 02
 #EXTVLCOPT:http-user-agent=DevM3U-Player
 http://103.159.180.34:5001/live/625.m3u8
