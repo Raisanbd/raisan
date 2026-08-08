@@ -161,9 +161,13 @@ http://live-stream.amarbanglatv.in:8080/hls/sanandatv/index.m3u8
 http://103.175.73.12:8080/live/664/664_0.m3u8
 #EXTINF:-1 group-title="Bangla" tvg-id="KhushbooBangla.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e1/Khushboo_Bangla_logo_2017.png",Khushboo Bangla
 https://cdn-4.pishow.tv/live/1473/master.m3u8
+
+
 ############## Cartoon ##############
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/0QRKCsfQ/20240823_020937.png" group-title="𝐊𝐢𝐝𝐬",Duronto TV
 https://tvsen6.aynaott.com/6xyZ3N4oHv2KBJdB6W4p/index.m3u8
+#EXTINF:-1 tvg-logo="https://images.seeklogo.com/logo-png/2/1/cartoon-network-logo-png_seeklogo-26677.png" group-title="𝐊𝐢𝐝𝐬",Cartoon network
+http://103.151.60.188:12345/hls/tab_5lat1ob/index.m3u8?t=1786202554062
 #EXTINF:-1 tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Bangla.png" group-title="",nick bengali
 https://jioplaylistdown.yecic62314.workers.dev/live.m3u8?id=1341
 #EXTINF:-1 group-title="𝐊𝐢𝐝𝐬" tvg-logo="https://i.postimg.cc/G2F8757j/20240823-021053.png",Rongeen
