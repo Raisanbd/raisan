@@ -127,13 +127,14 @@ https://live1.entertv.com.bd/entertv/index.fmp4.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/TD4STyMD/New-Project-13.png" group-title="Indian Bangla",Zee Bangla HD 01
 #https://stream.ottplus.live/live/zee_bangla_abr/live/zee_bangla_720/chunks.m3u8
-http://103.159.180.34:5001/live/625.m3u8
+https://sm-monirul.top/@monirul_Islam_SM/play/zee_bangla.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/TD4STyMD/New-Project-13.png" group-title="INDIAN CHANNELS",ZEE BANGLA 02
 #EXTVLCOPT:http-user-agent=DevM3U-Player
 http://103.159.180.34:5001/live/625.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/ymwzwVvd/New-Project-14.png" group-title="INDIAN CHANNELS",SONY AATH
 #https://stream.ottplus.bd/live/sony_aath_abr/live/sony_aath_720/index.m3u8
-http://103.151.61.12/SONY_AATH/tracks-v1a1/mono.m3u8?token=i7bZaZWaFrSIE0
+#http://103.151.61.12/SONY_AATH/tracks-v1a1/mono.m3u8?token=i7bZaZWaFrSIE0
+https://sm-monirul.top/@monirul_Islam_SM/play/sonyaath.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/Ps0MFQwn/New-Project-15.png" group-title="INDIAN CHANNELS",STAR JALSHA HD
 https://s3.itcnbd.live/server-4/stream/aHR0cDovLzE3Mi4xOS4xNy4yMzA6ODA5MC9obHMvU3RhckphbHNoYUhELm0zdTg.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/Ps0MFQwn/New-Project-15.png" group-title="INDIAN CHANNELS",STAR JALSHA 
