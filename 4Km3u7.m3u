@@ -8,7 +8,7 @@ https://pub-f85680743e6f48c3b210af18613f778c.r2.dev/41507527efab4eeae403fb839f95
 
 http://103.151.60.188:12345/hls/tab_5lat1ob/index.m3u8?t=1786202925297
 #EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/N23H8ttr/New-Project-22.png", T-Sports HD
-https://aboxbdix.ryvox-tb-8ae.workers.dev/live/tsports.m3u8?token=21a16389d6a292104288caf25bfc7b26&time=1785903003&link_index=0
+http://103.151.60.188:12345/hls/tab_5lat1ob/index.m3u8?t=1786203269404
 #EXTINF:-1 tvg-id="tsports_live" tvg-name="Tsports Live" tvg-country="BD" tvg-logo="https://i.ibb.co.com/N23H8ttr/New-Project-22.png" tvg-chno="tspost_live" group-title="", T sports - server 2
 https://tvsen7.aynascope.net/Sports1/index.m3u8
  ============================================================
@@ -125,8 +125,8 @@ https://live1.entertv.com.bd/entertv/index.fmp4.m3u8
 ===========================================================
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/TD4STyMD/New-Project-13.png" group-title="Indian Bangla",Zee Bangla HD 01
-https://stream.ottplus.live/live/zee_bangla_abr/live/zee_bangla_720/chunks.m3u8
-
+#https://stream.ottplus.live/live/zee_bangla_abr/live/zee_bangla_720/chunks.m3u8
+http://103.151.60.188:12345/hls/tab_5lat1ob/index.m3u8?t=1786203211783
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/TD4STyMD/New-Project-13.png" group-title="INDIAN CHANNELS",ZEE BANGLA 02
 #EXTVLCOPT:http-user-agent=DevM3U-Player
 http://103.159.180.34:5001/live/625.m3u8
