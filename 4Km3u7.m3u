@@ -2,14 +2,17 @@
    ============================================================
                 Live Event
    ============================================================
-
+#EXTINF:-1 tvg-logo="https://tvassets.roarzone.net/images/102.png" group-title="sports",TSports
+https://edge2.roarzone.net:8447/roarzone/edge1/1/index.m3u8?token=a550ebd73e5d063523a64c047d90150dc12f4f0a-fc4a2e8d9e4297e80fbc77a83e6dedb1-1786557315-1786546515
 EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/GvXb94MP/New-Project-23.png", Atv Sports
-#EXTINF:-1 group-title="Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/en/0/0c/A_Sports_Logo.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original", Atv Sports
-https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/tracks-v1a1/mono.ts.m3u8?
-#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/N23H8ttr/New-Project-22.png", T-Sports HD
-https://s1.itcnbd.live/T-Sports-HD/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="tsports_live" tvg-name="Tsports Live" tvg-country="BD" tvg-logo="https://i.ibb.co.com/N23H8ttr/New-Project-22.png" tvg-chno="tspost_live" group-title="", T sports - server 2
-https://tvsen7.aynascope.net/Sports1/index.m3u8
+#EXTINF:-1 tvg-logo="https://tvassets.roarzone.net/images/25.png" group-title="sports",Star Sports 1
+https://edge2.roarzone.net:8447/roarzone/edge1/7/index.m3u8?token=b315cd775d91218859d8f38d8fda6bf33e96b23c-ab2d0856ae60f545f7e4541289a53a1b-1786557315-1786546515
+#EXTINF:-1 tvg-logo="https://tvassets.roarzone.net/images/Unite8-2.png" group-title="sports",Unite8 2 HD FIFA
+https://edge2.roarzone.net:8447/roarzone/edge1/6/index.m3u8?token=b09480f2b5b633921020d47fe3f97a5359e4bbad-9e3fbddae59395c1665e50891385786e-1786557326-1786546526
+#EXTINF:-1 tvg-logo="https://tvassets.roarzone.net/images/73.png" group-title="sports",PTV spotrs
+https://edge2.roarzone.net:8447/roarzone/edge7/ptv/index.m3u8?token=8a0ea02ba803024a062a1473f34dca4944250531-a43bc47050448ec1ef654bdaa3b811ef-1786557331-1786546531
+#EXTINF:-1 tvg-logo="https://tvassets.roarzone.net/images/add-sports-1.png" group-title="sports",ASPORTS
+https://edge2.roarzone.net:8447/roarzone/edge7/128/index.m3u8?token=a459e1de2796292ea6e601c3490221461fc32bcf-d705b7076d869cf84da07c439532729b-1786557331-1786546531
 #EXTINF:-1 tvg-id="discovery_hd" tvg-name="" tvg-country="IN" tvg-logo="https://images.toffeelive.com/images/program/18093/logo/240x240/mobile_logo_868363001673181438.png" tvg-chno="" group-title="", Discovery HD
 https://mflixott.com/tv/toffee-by-maruf/live.php?id=discovery_hd&e=.m3u8
 
