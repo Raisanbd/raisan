@@ -3,6 +3,18 @@
 #KODIPROP:inputstream.adaptive.stream_headers=Host=bldcmprod-cdn.toffeelive.com&cookie=Edge-Cache-Cookie%3DURLPrefix%3DaHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires%3D1786957214:KeyName%3Dprod_linear:Signature%3DMoGrN2x9RAt73LwJvcYFVNhqfeX2_4mw87_aYGfg61gHPyXx6kjg0WHEemuTIOVs902HJm3mE9qUMCyY5QfGBA&user-agent=okhttp/5.1.0&client-api-header=null&accept-encoding=gzip
 https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8
 
+#EXTINF:-1 tvg-name="Nick" tvg-logo="https://v3img.voot.com/resizeMedium,w_450,h_253/v3Storage/assets//16x9-1719554242246.jpg" group-title="Kids",Nick
+#EXTVLCOPT:network-caching=1000
+https://shoebinfo.qzz.io/test/hot.php/Nick.m3u8
+#EXTINF:-1 tvg-name="Nick Jr" tvg-logo="https://v3img.voot.com/resizeMedium,w_450,h_253/v3Storage/assets/nick-jr-16x9-2-1626708077243.jpg" group-title="Kids",Nick Jr
+#EXTVLCOPT:network-caching=1000
+https://shoebinfo.qzz.io/test/hot.php/Nick-Jr.m3u8
+#EXTINF:-1 tvg-name="Sonic" tvg-logo="https://v3img.voot.com/resizeMedium,w_450,h_253/v3Storage/assets/sonic-16x9-2-1626707025539.jpg" group-title="Kids",Sonic
+#EXTVLCOPT:network-caching=1000
+https://shoebinfo.qzz.io/test/hot.php/Sonic.m3u8
+#EXTINF:-1 tvg-name="Nick HD+" tvg-logo="https://v3img.voot.com/resizeMedium,w_1090,h_613/v3Storage/assets/nick-hd-plus-live-channels-16x9-4-1642585145139.jpg" group-title="Kids",Nick HD+
+#EXTVLCOPT:network-caching=1000
+https://shoebinfo.qzz.io/test/hot.php/Nick-HD-.m3u8
 
 #EXTINF:-1 tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1784629064327.png" group-title="News",Somoy tv
 #EXTHTTP:{"cookie":"Edge-Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9vd3Jjb3ZjcnB5LmdwY2RuLm5ldC9icGstdHYvMTcxMy9vdXRwdXQvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRWRnZVRpbWUiOjE3ODY4MjA0MTd9fX1dfQ;Edge-Signature=FMv-ZCNT7a~TwgEiwhLPzFMzaFHw2v1Qxnr5~tDRnrE;Edge-Key-Pair-Id=DEFAULT"}
