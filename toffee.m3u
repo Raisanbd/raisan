@@ -1,10 +1,17 @@
 #=================================
-#EXTINF:-1 group-title="Family" tvg-logo="https://assets-prod.services.toffeelive.com/DNMXs5UBm1RY_In7IJ72/posters/737b5c6e-8435-4cd8-81de-16a499fa6f4e.png",Toffee TV
+#EXTINF:-1 tvg-name="Zee Bangla VIP" tvg-logo="https://images.toffeelive.com/images/program/340/logo/240x240/mobile_logo_094417001655891123.png" group-title="Entertainment Channels",Zee Bangla VIP
+#KODIPROP:inputstream.adaptive.stream_headers=Host=bldcmprod-cdn.toffeelive.com&cookie=Edge-Cache-Cookie%3DURLPrefix%3DaHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires%3D1786957214:KeyName%3Dprod_linear:Signature%3DMoGrN2x9RAt73LwJvcYFVNhqfeX2_4mw87_aYGfg61gHPyXx6kjg0WHEemuTIOVs902HJm3mE9qUMCyY5QfGBA&user-agent=okhttp/5.1.0&client-api-header=null&accept-encoding=gzip
+https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8
+
+#EXTINF:-1 group-title="Family" tvg-logo="https://i.ibb.co.com/ynNRSTJK/New-Project-1.png",Rlive Movies
 #EXTVLCOPT:http-user-agent=okhttp/5.1.0
 #EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1786935660:KeyName=prod_linear:Signature=s5T5lH5NerR1i3M6VNmbq3VPKYStROtDPgemufHjasaxawaTWg3287qamQd1yZNnTtKWtu0KYcu1AcDpfbp1BQ"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_drama/playlist.m3u8
 
-#EXTINF:-1 group-title="Sports" tvg-logo="https://assets-prod.services.toffeelive.com/V__o054BObUt2AG6LL5C/posters/84590b8d-6430-4ba8-a0a5-757bf2f57c05.png",WC Match Recap
+#EXTINF:-1 tvg-logo="https://tvassets.roarzone.net/images/102.png" group-title="sports",TSports hd
+http://103.185.24.134:3001/TSportsHD/index.m3u8
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/XrB106HL/New-Project.png",Rlivw Sports
 #EXTVLCOPT:http-user-agent=okhttp/5.1.0
 #EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1786935660:KeyName=prod_linear:Signature=s5T5lH5NerR1i3M6VNmbq3VPKYStROtDPgemufHjasaxawaTWg3287qamQd1yZNnTtKWtu0KYcu1AcDpfbp1BQ"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_world_cup/playlist.m3u8
