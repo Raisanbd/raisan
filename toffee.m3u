@@ -3,7 +3,15 @@
 #KODIPROP:inputstream.adaptive.stream_headers=Host=bldcmprod-cdn.toffeelive.com&cookie=Edge-Cache-Cookie%3DURLPrefix%3DaHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires%3D1786957214:KeyName%3Dprod_linear:Signature%3DMoGrN2x9RAt73LwJvcYFVNhqfeX2_4mw87_aYGfg61gHPyXx6kjg0WHEemuTIOVs902HJm3mE9qUMCyY5QfGBA&user-agent=okhttp/5.1.0&client-api-header=null&accept-encoding=gzip
 https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/16-by-xfireflix.png" group-title="CricHD 1",Star Sports 1
+#EXTVLCOPT:http-referrer=https://executeandship.com/
+#EXTVLCOPT:http-origin=https://executeandship.com
+https://cdn4.zohanayaan.com:1686/hls/star1in.m3u8?md5=A5eBKNMlwfqFx2dnTMYKQQ&expires=1786814413
 
+#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1-by-xfireflix.png" group-title="CricHD 1",Star Sports 1 Hindi
+#EXTVLCOPT:http-referrer=https://executeandship.com/
+#EXTVLCOPT:http-origin=https://executeandship.com
+https://cdn4.zohanayaan.com:1686/hls/starhindi.m3u8?md5=fKYnQl5VhO_SewBMbESY2A&expires=1786814414
 
 #EXTINF:-1 group-title="Family" tvg-logo="https://i.ibb.co.com/ynNRSTJK/New-Project-1.png",Rlive Movies
 #EXTVLCOPT:http-user-agent=okhttp/5.1.0
