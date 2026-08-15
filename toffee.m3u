@@ -16,7 +16,21 @@ https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8
 #EXTHTTP:{"cookie":"Edge-Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9vd3Jjb3ZjcnB5LmdwY2RuLm5ldC9icGstdHYvMTcwNC9vdXRwdXQvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRWRnZVRpbWUiOjE3ODY4MjA0MjN9fX1dfQ;Edge-Signature=sJScSENjveK0qqCkJF1RW0XR769iYFD~F7yT1oUMC4g;Edge-Key-Pair-Id=DEFAULT"}
 https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sony_HD.png" group-title="Sony liv",Sony HD
+#EXTVLCOPT:http-referrer=https://premiumplugx.me/
+https://plugsony.cstds.workers.dev/sligni/sony.php/set-hd.m3u8
 
+#EXTINF:-1 tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sony_SAB_HD.png" group-title="Sony liv",Sony SAB HD
+#EXTVLCOPT:http-referrer=https://premiumplugx.me/
+https://plugsony.cstds.workers.dev/sligni/sony.php/sab-hd.m3u8
+
+#EXTINF:-1 tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sony_Marathi_SD.png" group-title="Sony liv",Sony Marathi HD
+#EXTVLCOPT:http-referrer=https://premiumplugx.me/
+https://plugsony.cstds.workers.dev/sligni/sony.php/marathi.m3u8
+
+#EXTINF:-1 tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sony_aath.png" group-title="Sony liv",Sony aath
+#EXTVLCOPT:http-referrer=https://premiumplugx.me/
+https://plugsony.cstds.workers.dev/sligni/sony.php/aath.m3u8
 
 
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/16-by-xfireflix.png" group-title="CricHD 1",Star Sports 1
