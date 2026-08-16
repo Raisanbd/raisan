@@ -6,10 +6,11 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://tvassets.roarzone.net/images/102.png" group-title="sports",TSports hd
 http://103.185.24.134:3001/TSportsHD/index.m3u8
 
-#EXTINF:-1 group-title="Family" tvg-logo="https://i.ibb.co.com/ynNRSTJK/New-Project-1.png",Rlive Movies
-#EXTVLCOPT:http-user-agent=okhttp/5.1.0
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1786935660:KeyName=prod_linear:Signature=s5T5lH5NerR1i3M6VNmbq3VPKYStROtDPgemufHjasaxawaTWg3287qamQd1yZNnTtKWtu0KYcu1AcDpfbp1BQ"}
-https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_drama/playlist.m3u8
+
+#EXTINF:-1 group-title="LIVE" tvg-chno="" tvg-id="" tvg-logo="https://i.ibb.co.com/ynNRSTJK/New-Project-1.png", Rlive Movies
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787073263:KeyName=prod_linear:Signature=fnVsWqKyoT2685TiOZ_keJbkEP5xhqGhuqCwcsOE4gCP2CY1HuiHJrllgJ6-3wZ8GQU4tIp1_z5ZWUmlfDyKCA"}
+https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_movie/playlist.m3u8
 
 #EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/XrB106HL/New-Project.png",Rlivw Sports
 #EXTVLCOPT:http-user-agent=okhttp/5.1.0
@@ -23,15 +24,6 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_drama/playlist.m3u8
 
 
 
-#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/16-by-xfireflix.png" group-title="CricHD 1",Star Sports 1
-#EXTVLCOPT:http-referrer=https://executeandship.com/
-#EXTVLCOPT:http-origin=https://executeandship.com
-https://cdn4.zohanayaan.com:1686/hls/star1in.m3u8?md5=A5eBKNMlwfqFx2dnTMYKQQ&expires=1786814413
-
-#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1-by-xfireflix.png" group-title="CricHD 1",Star Sports 1 Hindi
-#EXTVLCOPT:http-referrer=https://executeandship.com/
-#EXTVLCOPT:http-origin=https://executeandship.com
-https://cdn4.zohanayaan.com:1686/hls/starhindi.m3u8?md5=fKYnQl5VhO_SewBMbESY2A&expires=1786814414
 
 
 #EXTINF:-1 group-title="𝐁𝐚𝐧𝐠𝐥𝐚𝐝𝐞𝐬𝐡𝐢" tvg-logo="https://i.postimg.cc/y8cfPVhg/20240822-225146.png",BTV
