@@ -1,6 +1,7 @@
 #=================================
-#EXTINF:-1 tvg-name="Zee Bangla VIP" tvg-logo="https://images.toffeelive.com/images/program/340/logo/240x240/mobile_logo_094417001655891123.png" group-title="Entertainment Channels",Zee Bangla 
-#KODIPROP:inputstream.adaptive.stream_headers=Host=bldcmprod-cdn.toffeelive.com&cookie=Edge-Cache-Cookie%3DURLPrefix%3DaHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires%3D1787130015:KeyName%3Dprod_linear:Signature%3DBTZTidO_PPdhsS9YG-9o-R46zhRQd96s5TKB6MZTxISZpsksekyVhAZf6XriC2C3XZKaAVjqO3ptCiTA9CA7BQ&user-agent=okhttp/5.1.0&client-api-header=null&accept-encoding=gzip
+#EXTINF:-1 group-title="Entertainment Channels" tvg-chno="" tvg-id="" tvg-logo="https://images.toffeelive.com/images/program/340/logo/240x240/mobile_logo_094417001655891123.png", Zee Bangla VIP
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://tvassets.roarzone.net/images/102.png" group-title="sports",TSports hd
@@ -9,17 +10,17 @@ http://103.185.24.134:3001/TSportsHD/index.m3u8
 
 #EXTINF:-1 group-title="LIVE" tvg-chno="" tvg-id="" tvg-logo="https://i.ibb.co.com/ynNRSTJK/New-Project-1.png", Rlive Movies
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
-https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_movie/playlist.m3u8
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
+https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_movie/playlist.m3u88
 
 #EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/XrB106HL/New-Project.png",Rlivw Sports
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/sports_highlights/playlist.m3u8
 
 #EXTINF:-1 group-title="LIVE" tvg-chno="" tvg-id="" tvg-logo="https://img.magnific.com/premium-vector/education-material-icon-vector-illustration_1253202-133617.jpg?semt=ais_hybrid&w=740&q=80",Rlive Dramas
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_drama/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560841094.png" group-title="Entertainment",NTV
@@ -38,104 +39,85 @@ http://103.165.93.31:8095/btv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-logo="https://imglink.cc/cdn/1_dUKmt1Oe.png", G Series Drama
 https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8
 
-
 #EXTINF:-1 group-title="News Channel" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com//Xi_Ga5oBNnOkwJLWkhKP/posters/ef2899d5-1ae0-4fee-aee5-45f9b0b3ba80.png", Somoy TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/somoy_tv/playlist.m3u8
-
 #EXTINF:-1 group-title="News Channel" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/ES_cZZsBNnOkwJLW1Oz1/posters/b872b8f5-cb6b-45a1-a1cd-7609df51d614.png", Independent TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/independent_tv/playlist.m3u8
-
 #EXTINF:-1 group-title="News Channel" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/6Hz1PJwBcqxnFHJBhgkV/posters/845f1e3f-987a-47cc-a48d-ee12d8f4d419.png", Desh TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/desh_tv/playlist.m3u8
-
 #EXTINF:-1 group-title="News Channel" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com/w_640,q_75,f_webp/PiL635oBEef-9-uV2uCe/posters/36f380e0-6c71-4b27-a73b-2afb3ce7e982.png", Jamuna TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8
-
 #EXTINF:-1 group-title="News Channel" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com/w_640,q_75,f_webp/NCLx35oBEef-9-uVh-Dg/posters/af9773c7-7971-41a2-9b78-121fcb240c48.png", ATN News
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/atn_news/playlist.m3u8
-
 #EXTINF:-1 group-title="বাংলাদেশী চ্যানেল" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com/w_640,q_75,f_webp/MCLv35oBEef-9-uVH-D2/posters/0d1e571c-ebb2-4277-9814-760a4f1603a6.png", ATN Bangla
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/atn_bangla/playlist.m3u8
-
 #EXTINF:-1 group-title="বাংলাদেশী চ্যানেল" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/FHz5PJwBcqxnFHJBdAqW/posters/419869ac-8ddf-4909-86c1-b69f0a3adf13.png", Nexus TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/nexus_tv/playlist.m3u8
-
 #EXTINF:-1 group-title="বাংলাদেশী চ্যানেল" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/CXz4PJwBcqxnFHJBPwrG/posters/2f913e34-3a6c-45e6-9f1f-97bf129a2ff5.png", Movie Bangla
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/movie_bangla/playlist.m3u8
-
 #EXTINF:-1 group-title="বাংলাদেশী চ্যানেল" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/-Xz3PJwBcqxnFHJBDAlE/posters/fecea361-8b60-4aeb-a530-6e27eee8178a.png", Mohona TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/mohona_tv/playlist.m3u8
-
 #EXTINF:-1 group-title="বাংলাদেশী চ্যানেল" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com//wCM3l5sBEef-9-uVXFvD/posters/d80f7aee-5bd7-4edc-97eb-ead0e3ebbe09.png", Ananda TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/anandatv/playlist.m3u8
 #EXTINF:-1 group-title="বাংলাদেশী চ্যানেল" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com//bns4l5sBcqxnFHJBVZ32/posters/feaf9f3d-cc3b-4a3d-81a3-2cb703e561eb.png", Bijoy TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/bijoytv/playlist.m3u8
-
 #EXTINF:-1 group-title="বাংলাদেশী চ্যানেল" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com/w_640,q_75,f_webp/0y_tDJsBNnOkwJLWNrdE/posters/2ff058e1-630f-4657-8dc6-b677e65642c5.png", Global TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/global_tv/playlist.m3u8
-
 #EXTINF:-1 group-title="বাংলাদেশী চ্যানেল" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com//WyPuDJsBEef-9-uVUA_z/posters/ea20055c-a824-443c-8083-ce8e2da8b922.png", Channel S
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/channel_s/playlist.m3u8
-
 #EXTINF:-1 group-title="বাংলাদেশী চ্যানেল" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com//JiK-_poBEef-9-uVZv6L/posters/757a328e-70d6-45de-b093-0a843c69ade7.png", Bangla TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/bangla_tv/playlist.m3u8
-
 #EXTINF:-1 group-title="বাংলাদেশী চ্যানেল" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com//MyK__poBEef-9-uVmf5l/posters/1eadef5b-28e7-4dc2-b42f-c67a3357c9a0.png", Asian TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/asian_tv/playlist.m3u8
-
 #EXTINF:-1 group-title="বাংলাদেশী চ্যানেল" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com/w_640,q_75,f_webp/qnv835oBcqxnFHJBuQcB/posters/348dfac3-c1e0-485d-a72b-3d282c9e2c73.png", Channel i
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/channel_i/playlist.m3u8
-
 #EXTINF:-1 group-title="বাংলাদেশী চ্যানেল" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com/w_640,q_75,f_webp/o3v235oBcqxnFHJBkAdC/posters/159af631-796d-4342-a2a7-c272f32bcd32.png", Ekhon TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/ekhon_tv/playlist.m3u8
-
 #EXTINF:-1 group-title="বাংলাদেশী চ্যানেল" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/KECGB54BuUSiBsg_dHyj/posters/d032f456-c7e8-4fd4-928b-ea5359960ed7.png", Rajdhani TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/rajdhani_tv/playlist.m3u8
-
 #EXTINF:-1 group-title="বাংলাদেশী চ্যানেল" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/jehEA54BIxFjn23xAmdw/posters/f20b1b2e-3662-4da5-a71b-3f769d2a9a4e.png", Islamic TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/islamic_tv/playlist.m3u8
-
 #EXTINF:-1 group-title="News Channel" tvg-chno="" tvg-id="" tvg-logo="https://assets-prod.services.toffeelive.com//PS_La5oBNnOkwJLWLRN_/posters/e8c444fd-ee3b-4bf3-bb0a-f969bc295f82.png", Ekattor TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787142725:KeyName=prod_linear:Signature=8LOjpuDsxpTpISMmZEQ5IUk2EIcBOfnY9_05Ikp__OgnDGqbT8WAQTbbR3e2EQiFbiZXSNTXCLguLceVJls4AA"}
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1787319545:KeyName=prod_linear:Signature=Jm9aKjirzQxd8Pb67nZWgfeKyDwTm0sLxyD73tW0Fmn02-_qSgcuej-fFs_lV_juEoXOMhlzo0rsJ0JjkvTCAg"}
 https://bldcmprod-cdn.toffeelive.com/cdn/live/ekattor_tv/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sony_HD.png" group-title="Sony liv",Sony HD
