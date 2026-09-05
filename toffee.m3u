@@ -19,10 +19,7 @@ http://103.185.24.134:3001/TSportsHD/index.m3u8
 https://flussonic.defineatoz.com/TSports2/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 group-title="LIVE" tvg-chno="" tvg-id="" tvg-logo="https://i.ibb.co.com/ynNRSTJK/New-Project-1.png", Rlive Movies
-#EXTVLCOPT:http-user-agent=okhttp/5.1.0
-#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1788696057:KeyName=prod_linear:Signature=bTuwCRHOWuAwKYIcFl5YTY2J8S7ai7eGYPoRUT_EUE3_EPrH_nP11pgYgIccxeoS0Xw6CBoXb1qkUVlIReAQDA"}
-https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_movie/playlist.m3u8
-
+http://192.168.0.113:8888/raisan_tvhd/index.m3u8
 
 #EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/XrB106HL/New-Project.png",Rlivw Sports
 #EXTVLCOPT:http-user-agent=okhttp/5.1.0
