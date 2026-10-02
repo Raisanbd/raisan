@@ -1,1 +1,7 @@
-cvcvc
+{
+  "versionCode": 2,
+  "versionName": "2.0",
+  "apkUrl": "https://github.com/Raisanbd/raisan/releases/download/v2.0/app-release.apk",
+  "changelog": "Raisan Tv v2.0 — নতুন ফোন UI, Movie OTT ডিজাইন, 📡 M3U এডিটর (অ্যাক্সেস কোড), ExoPlayer Media3 লেটেস্ট বাফার-ফ্রি, iframe (WebView) সাপোর্ট, নতুন লোগো ও splash screen",
+  "forceUpdate": false
+}
