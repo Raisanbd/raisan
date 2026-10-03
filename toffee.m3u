@@ -1,4 +1,8 @@
 #EXTM3U
+#EXTINF:-1 tvg-name="Zee Bangla" tvg-logo="https://assets-prod.services.toffeelive.com/kK2aX5UBrjBfS2_RBcKf/posters/ba5dd8dc-4f87-414a-b57f-c9ecdeda5253.png" group-title="Drama",Zee Bangla
+#KODIPROP:inputstream.adaptive.stream_headers=Host=prod-linear-media.toffeelive.com&user-agent=okhttp/5.1.0&client-api-header=null&accept-encoding=gzip
+https://prod-linear-media.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8?edge-cache-token=Expires=1791014484~Starts=1791010884~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=TMkTVApTuAT2Rwq39jrUYoey8Kw8XmHEqjXBCMfguw2Cb-bsYoOzCUHk7AhBO_LCAhS5FgOefsJ3AVIm2l2pBg
+
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/zvf1m76p/20260918-142751.png" group-title="Bangladesh",Zee Bangla HD
 https://tvsen6.aynaott.com/ZeeBangla/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-id="0001_tsports" tvg-logo="http://103.151.60.190/tvlogo/TSports.jpg" tvg-name="0001_TSPORTS" group-title="Sports",0001_TSPORTS
