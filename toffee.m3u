@@ -4,7 +4,8 @@ http://103.114.11.37:8081/ZEE-Bangla/index.m3u8?token=dsgdfgsdfgasf
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/wjWkWhzp/Zee-bangla.png" group-title="𝐈𝐧𝐝𝐢𝐚𝐧 𝐁𝐚𝐧𝐠𝐥𝐚",Zee Bangla HD
 https://tvsen6.aynaott.com/ZeeBangla/tracks-v1a1/mono.ts.m3u8
-
+----------------------------------- Bangla Chaneel----------------
+------------------------------------              -----------------
 
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/28VMF8hx/btv-news.png?ref=skym3u.dev",BTV News
 https://btv.hridoytv-channel.workers.dev/news.m3u8
@@ -84,6 +85,8 @@ https://iptvbd.live/metv1080/1080.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.tbn24.com/logo.png" group-title="SM All TV",TBN 24
 https://www.tbn24.com/live-tv-stream/20201_0.m3u8
 
+--------------------------------Cartoon Channel----
+----------------------------------------------------
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRctL8rD_FYfZ1rHUDhs_Q3rJwRYGSDbMX0-XHpHFXLjeTC2D9iYwo8Gq3J&s=10" group-title="SM All TV",NRB HD
 https://app.ncare.live/live-orgin/nrb-eu.stream/playlist.m3u8
@@ -142,6 +145,10 @@ https://drk6xq0vhn.gpcdn.net/live/cn_sd_abr/index.m3u8
 https://drk6xq0vhn.gpcdn.net/live/discovery_kids_abr/index.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/SKXgPFXW/pogo.png?ref=skym3u.dev",Pogo
 https://drk6xq0vhn.gpcdn.net/live/pogo_sd_abr/index.m3u8
+
+------------------------------------------Indian Bangla Channel ----------------------
+--------------------------------------------------------------------------------------
+
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/j5xkWsRS/star-jalsa.png?ref=skym3u.dev",Star Jalsha HD
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starjalsha.smil/chunklist_b1928000.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/3w6F5VZ5/20240822-231514.png?ref=skym3u.dev",Colors Bangla HD
@@ -156,6 +163,11 @@ https://drk6xq0vhn.gpcdn.net/live/sony_aath_abr/index.m3u8
 https://drk6xq0vhn.gpcdn.net/live/zee_bangla_cinema_abr/index.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/Kc7BJRCy/20240823-020704.png?ref=skym3u.dev",Sananda Tv
 http://27.124.71.27/Animal_Planet/index.m3u8
+
+-----------------------------Indian Channel----------------
+----------------------------------------------------------
+
+
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/F1t6r1gv/20240823_023247.png?ref=skym3u.dev",Colors HD
 http://103.114.11.37:8081/Colors-HD/index.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/8k3QXzvt/20240823_022853.png?ref=skym3u.dev",Star Plus HD
@@ -206,6 +218,10 @@ https://d2dsoyvkr33m05.cloudfront.net/index_5.m3u8
 https://aajtaklive-amd.akamaized.net/hls/live/2014416/aajtak/aajtaklive/live_720p/chunks.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/26xDgSs9/NDTV.webp?ref=skym3u.dev",NDTV Hindi
 https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/master.m3u8
+
+----------------Music Channel--------------------
+-------------------------------------------------
+
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/pdddb1bs/20250529_120025.png?ref=skym3u.dev",Sangeet Bangla
 http://14.96.244.82:5001/live/740.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/0N2VWksB/channels4-profile.jpg?ref=skym3u.dev",B4U Music
@@ -228,6 +244,9 @@ https://amg01412-xiaomiasia-yrfmusic-xiaomi-1rmk2.amagi.tv/playlist/amg01412-xia
 http://146.59.253.52:8080/hindihitshd/index.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/d1pkfnGy/s143757-ld-h15-aa.png?ref=skym3u.dev",Sangeet Bhojpuri
 http://14.96.244.82:5001/live/741.m3u8
+
+-----------------------Sports Channel--------------------
+--------------------------------------------------------
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/rFKBNjwP/Ptvsportslogo2023.webp?ref=skym3u.dev",PTV
 http://103.135.253.32:8080/PTV-SPORTS/tracks-v1a1/mono.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/rFKBNjwP/Ptvsportslogo2023.webp?ref=skym3u.dev",Sky Sports Cricket
