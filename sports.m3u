@@ -1,3 +1,39 @@
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/rFKBNjwP/Ptvsportslogo2023.webp?ref=skym3u.dev",PTV
+http://103.135.253.32:8080/PTV-SPORTS/tracks-v1a1/mono.m3u8
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/rFKBNjwP/Ptvsportslogo2023.webp?ref=skym3u.dev",Sky Sports Cricket
+http://2756d46c.akciatv.ru/iptv/7FRNF6CY9A9TG3/9258/index.m3u8
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/rFKBNjwP/Ptvsportslogo2023.webp?ref=skym3u.dev",Sky Sports Football
+http://2756d46c.akciatv.ru/iptv/7FRNF6CY9A9TG3/9289/index.m3u8
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/W1z5BGPZ/20240823_024712.png?ref=skym3u.dev",A Sports HD
+https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/HntSg3xw/20240823_024624.png?ref=skym3u.dev",Willow HD
+https://tvsen5.aynaott.com/willowhd/index.m3u8
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/pXx765TQ/20240823_024350.png?ref=skym3u.dev",Euro Sports HD
+https://drk6xq0vhn.gpcdn.net/live/euro_sports_hd_abr/index.m3u8
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/zBgM9nK7/20240823_024306.png?ref=skym3u.dev",Star Sports 2
+https://tvsen7.aynaott.com/ssport2hd/index.m3u8
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/65fsWLS1/20240823_024136.png?ref=skym3u.dev",Sony Ten 1
+https://drk6xq0vhn.gpcdn.net/live/ten_1_hd_720/index.m3u8
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/wjqC7RYx/20240823_024150.png?ref=skym3u.dev",Sony Ten 2
+https://drk6xq0vhn.gpcdn.net/live/ten_2_hd_720/index.m3u8
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/W4tx7R4Q/20240823_024232.png?ref=skym3u.dev",Sony Ten 5
+https://drk6xq0vhn.gpcdn.net/live/ten_5_hd_720/index.m3u8
+#EXTINF:-1  tvg-logo="https://i.imgur.com/jVBfQNj.png?ref=skym3u.dev",Mundial
+https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/43NXkFx5/20240823_023458.png?ref=skym3u.dev",Animal Planet HD
+https://drk6xq0vhn.gpcdn.net/live/animal_planet_hd/index.m3u8
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/cJ90sMKN/20240823_023541.png?ref=skym3u.dev",Discovery
+https://drk6xq0vhn.gpcdn.net/live/discovery_hd_abr/index.m3u8
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/VN6PHrKZ/20240823_023950.png?ref=skym3u.dev",National Geographic HD
+http://103.135.253.32:8080/NATGEO-HD/index.m3u8
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/MZR248Yw/20240823-024104.png?ref=skym3u.dev",Love Natural
+https://bamusa-naturetime-emea-eng-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/mkzX5fKL/bbc-earth-logo-2023-1x1-removebg-preview.png?ref=skym3u.dev",BBC Earth
+https://amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv/BBCStudios-BBCEarthA-hls/playlist540p.m3u8
+#EXTINF:-1  tvg-logo="https://i.postimg.cc/L4xmdz7W/OIP-removebg-preview.png?ref=skym3u.dev",History TV18
+https://n18syndication.akamaized.net/bpk-tv/History_HD_NW18_MOB/output01/master.m3u8
+
+
 #EXTINF:-1 tvg-id="f27de012-0785-4152-892a-014a497e234e" tvg-name="Unite8 Sports 1" tvg-logo="https://s3.aynaott.com/storage/4380e37cf05dc85035434fe0e395974d" group-title="Sports",Unite8 Sports 1
 https://tvsen6.aynaott.com/superlaliga/index.m3u8?e=1784102509&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=b6e220b27addbd7e852fe6671bff5738
 #EXTINF:-1 tvg-id="e9943a0d-a64f-4da6-9a12-023d604dc6b1" tvg-name="Unite8 Sports 2" tvg-logo="https://s3.aynaott.com/storage/bec77d9ab072a37a8912d9d4f9853298" group-title="Sports",Unite8 Sports 2
