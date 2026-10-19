@@ -1,7 +1,7 @@
 {
   "versionCode": 3,
-  "versionName": "3.1",
-  "apkUrl": "https://github.com/nishiafrin705-netizen/admin/raw/refs/heads/main/Raisan%20Tv%20v%202.01.apk",
+  "versionName": "2.1",
+  "apkUrl": "https://github.com/nishiafrin705-netizen/admin/raw/refs/heads/main/raisan-tv2.1.apk",
   "changelog": "Raisan Tv v3.1 — নতুন ফোন UI, Movie OTT ডিজাইন,  লেটেস্ট বাফার-ফ্রি, iframe (WebView) সাপোর্ট, ",
   "forceUpdate": false
 }
