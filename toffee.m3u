@@ -7,8 +7,8 @@ https://tvsen6.aynaott.com/ZeeBangla/tracks-v1a1/mono.ts.m3u8
 ----------------------------------- Bangla Chaneel----------------
 ------------------------------------              -----------------
 
-#EXTINF:-1  tvg-logo="https://i.postimg.cc/28VMF8hx/btv-news.png?ref=skym3u.dev",BTV News
-https://btv.hridoytv-channel.workers.dev/news.m3u8
+#EXTINF:-1  tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb0BlySbJ3Jd0avPgybx5PU_XT9qnQqwOxWZ9L06MITg&s=10",TSports HD
+http://103.151.60.162:2122/play/a030/index.m3u8
 #EXTINF:-1  tvg-logo="https://raw.githubusercontent.com/ahan443/logo/refs/heads/main/atn%20bangla.png?ref=skym3u.dev",ATN Bangla
 https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/W4SwWtd3/20240822-225840.png?ref=skym3u.dev",ATN News
