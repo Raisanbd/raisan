@@ -17,6 +17,9 @@ https://tvsen6.aynaott.com/da6WMXAk/index.m3u8
 https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/rsDjtcFp/20240822_225424.png?ref=skym3u.dev",Ekushe TV
 https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8
+#EXTINF:-1  tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0cfZv0EffoM-JGOYXcVVTsrSgASADMwJTzwrcNl5PvTwozw-9cHmDnoVC&s=10",Nagorik Tv
+https://box.bbaria.net/Nagorik_TV/tracks-v1a1/mono.m3u8
+
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/k5WQ0nyw/channel-i.png?ref=skym3u.dev",Channel i
 https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/3rqnQyn0/20240822-225501.png?ref=skym3u.dev",N TV
