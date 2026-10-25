@@ -9,8 +9,11 @@ https://tvsen6.aynaott.com/ZeeBangla/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/05n5rRv6/logo0.jpg",Raisan Tv
 http://103.151.60.162:2122/play/a030/index.m3u8
 
-#EXTINF:-1  tvg-logo="https://livetv.shamon-cable.net/assets/images/channel52_1789106072.webp",Raisan Tv
+#EXTINF:-1  tvg-logo="https://livetv.shamon-cable.net/assets/images/channel52_1789106072.webp",Channel 52
 https://livetv.shamon-cable.net:8443/Channel52/index.m3u8
+
+#EXTINF:-1  tvg-logo="https://livetv.shamon-cable.net/assets/images/channel52_1789p",star bangla
+https://livetv.shamon-cable.net:8443/StarBangla/index.m3u8
 
 #EXTINF:-1  tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb0BlySbJ3Jd0avPgybx5PU_XT9qnQqwOxWZ9L06MITg&s=10",TSports HD
 http://103.151.60.162:2122/play/a030/index.m3u8
