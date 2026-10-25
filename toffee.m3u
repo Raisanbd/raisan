@@ -6,7 +6,7 @@ http://103.114.11.37:8081/ZEE-Bangla/index.m3u8?token=dsgdfgsdfgasf
 https://tvsen6.aynaott.com/ZeeBangla/tracks-v1a1/mono.ts.m3u8
 ----------------------------------- Bangla Chaneel----------------
 ------------------------------------              -----------------
-#EXTINF:-1  tvg-logo="https://i.postimg.cc/05n5rRv6/logo0.jpg",Raisan Tv
+EXTINF:-1  tvg-logo="https://i.postimg.cc/05n5rRv6/logo0.jpg",Raisan Tv
 https://livetv.shamon-cable.net/proxy/proxy.php?id=5dae8d079788e9f0198db4c5a8d72082fd0f
 
 #EXTINF:-1  tvg-logo="https://livetv.shamon-cable.net/assets/images/channel52_1789106072.webp",Channel 52
