@@ -116,8 +116,7 @@ http://dvltv.cc/play/uxN8_xYmP3o_GFqK372_hwXRgwvKvQTn4Nol11F44jU
 http://vca.easy747.com:80/live/0578694/1295K6K/1020710.ts
 #EXTINF:-1 tvg-name="HBO 2" tvg-logo="https://i.postimg.cc/G2xcnH2L/20260917-203251.png" group-title="MOVIE 🍿",HBO
 http://filex.me:8080/live/03098001921RDB/03098001921RDB/1909812.ts
-#EXTINF:-1 tvg-name="Star Gold 2 HD" tvg-logo="https://i.postimg.cc/wv8vdCkT/20260917-182745.png" group-title="MOVIE 🍿",Star Gold 2 HD
-http://vca.easy747.com:80/live/0578694/1295K6K/1020178.ts
+
 
 #EXTINF:-1 , Star Gold Select
 http://103.114.11.37:8081/StarGoldSelect/index.m3u8?token=dsgdfgsdfgasf
