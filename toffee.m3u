@@ -102,90 +102,22 @@ https://iptvbd.live/metv1080/1080.m3u8
 https://www.tbn24.com/live-tv-stream/20201_0.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="Star Plus" group-title="Entertainment",Star Plus
 http://103.135.253.32:8080/STAR-PLUS/index.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="Star Jalsha" group-title="Entertainment",Star Jalsha
-http://103.135.253.32:8080/STAR-JALSHA/index.m3u8
-
-#EXTINF:-1 ,Jalsha Movies
-http://103.114.11.37:8081/Jalsha-Movies/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Star-sports-1
-http://103.114.11.37:8081/Star-sports-1/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Star-sports-2
-http://103.114.11.37:8081/Star-sports-2/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Star-select-1
-http://103.114.11.37:8081/Star-select-1/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Star-select-2
-http://103.114.11.37:8081/Star-select-2/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 ,Zee Cinema HD
-http://103.114.11.37:8081/Z-Cinema/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Sony 8
-http://103.114.11.37:8081/Sony-8/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Star Movies HD
-http://103.114.11.37:8081/Star-Movies/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Star Gold HD
-http://103.114.11.37:8081/StarGold/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Colors HD
-http://103.114.11.37:8081/Colors-HD/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Duronto
-http://103.114.11.37:8081/Duronto/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Star Movies Select
-http://103.114.11.37:8081/Star-movies-select/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 ,Enterr10bangla
-http://103.114.11.37:8081/Enterr10bangla/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 ,Colors Bangla Cinema
-http://103.114.11.37:8081/Colors-bangla-cinema/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 ,Star Plus
-http://103.114.11.37:8081/Star-Plus-HD/index.m3u8?token=dsgdfgsdfgasf
-
+#EXTINF:-1 tvg-id="StarGoldSelect.in@HD" tvg-logo="https://i.postimg.cc/Y08qYhB9/20260917-183853.png" group-title="MOVIE 🍿",Star Gold THRILLS
+http://filex.me:8080/live/03098001921RDB/03098001921RDB/911309.ts
+#EXTINF:-1 tvg-id="StarGoldSelect.in@HD" tvg-logo="https://i.postimg.cc/9XBfvNRG/20260917-183941.png" group-title="MOVIE 🍿",Star Gold Select HD (....40
+http://vca.easy747.com:80/live/0578694/1295K6K/72142.ts
 #EXTINF:-1 ,Colors Bangla
 http://103.114.11.37:8081/Colors-bangla/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Star-sports-3
-http://103.114.11.37:8081/Star-sports-3/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , TEN SPORTS
-http://103.114.11.37:8081/TEN-SPORTS/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , T Sports HD
-http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Sony-sports-3
-http://103.114.11.37:8081/Sony-sports-3/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Eurosport
-http://103.114.11.37:8081/Eurosport-HD/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Willow
-http://103.114.11.37:8081/Willow-TV/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Sony-sports-2
-http://103.114.11.37:8081/Sony-sports-2/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , PTV
-http://103.114.11.37:8081/PTV/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Sony Ten Sports 4 HD
-http://103.114.11.37:8081/Sony-sports-4/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , Unite8-sports-1
-http://103.114.11.37:8081/Unite8-sports-1/index.m3u8?token=dsgdfgsdfgasf
-
-#EXTINF:-1 , WWE Network
-http://103.114.11.37:8081/WWE-24/7/index.m3u8?token=dsgdfgsdfgasf
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/T2cPZHLj/20260917-183818.png" group-title="Bangladesh",Sony Television
+https://drk6xq0vhn.gpcdn.net/live/sony_ent_sd_abr/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/wBsvZqLs/20260917-182117.png" group-title="MOVIE 🍿",Zee Bangla Cinema
+http://dvltv.cc/play/uxN8_xYmP3o_GFqK372_hwXRgwvKvQTn4Nol11F44jU
+#EXTINF:-1 tvg-name="Sony SAB HD" tvg-logo="https://i.postimg.cc/P50fmg94/20260917-185405.png" group-title="MOVIE 🍿",Sony SAB HD
+http://vca.easy747.com:80/live/0578694/1295K6K/1020710.ts
+#EXTINF:-1 tvg-name="HBO 2" tvg-logo="https://i.postimg.cc/G2xcnH2L/20260917-203251.png" group-title="MOVIE 🍿",HBO
+http://filex.me:8080/live/03098001921RDB/03098001921RDB/1909812.ts
+#EXTINF:-1 tvg-name="Star Gold 2 HD" tvg-logo="https://i.postimg.cc/wv8vdCkT/20260917-182745.png" group-title="MOVIE 🍿",Star Gold 2 HD
+http://vca.easy747.com:80/live/0578694/1295K6K/1020178.ts
 
 #EXTINF:-1 , Star Gold Select
 http://103.114.11.37:8081/StarGoldSelect/index.m3u8?token=dsgdfgsdfgasf
