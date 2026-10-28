@@ -98,11 +98,9 @@ https://jtvs.ncare.live/Gznr84Woj7UEye3OPVeWq2ForboWAgdV/jonmobhumitv.stream/tra
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.metvbd.com/media/common/logo-fb.png" group-title="SM All TV",ME TV
 https://iptvbd.live/metv1080/1080.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://www.tbn24.com/logo.png" group-title="SM All TV",TBN 24
-https://www.tbn24.com/live-tv-stream/20201_0.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="Star Plus" group-title="Entertainment",Star Plus
-http://103.135.253.32:8080/STAR-PLUS/index.m3u8
-#EXTINF:-1 tvg-id="StarGoldSelect.in@HD" tvg-logo="https://i.postimg.cc/Y08qYhB9/20260917-183853.png" group-title="MOVIE 🍿",Star Gold THRILLS
+
+
+#EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/4y3qbp5T/Star-Gold-Select-HD.jpg",Star Gold Thrills
 http://filex.me:8080/live/03098001921RDB/03098001921RDB/911309.ts
 #EXTINF:-1 tvg-id="StarGoldSelect.in@HD" tvg-logo="https://i.postimg.cc/9XBfvNRG/20260917-183941.png" group-title="MOVIE 🍿",Star Gold Select HD (....40
 http://vca.easy747.com:80/live/0578694/1295K6K/72142.ts
