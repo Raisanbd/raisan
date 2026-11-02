@@ -195,7 +195,7 @@ https://drk6xq0vhn.gpcdn.net/live/pogo_sd_abr/index.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/j5xkWsRS/star-jalsa.png?ref=skym3u.dev",Star Jalsha HD
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starjalsha.smil/chunklist_b1928000.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/3w6F5VZ5/20240822-231514.png?ref=skym3u.dev",Colors Bangla HD
-http://103.135.253.32:8080/COLORS-BANGLA-HD/index.m3u8
+https://livetv.shamon-cable.net:8443/Colors-bangla/tracks-v1a1/mono.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/PJbWDxnT/20240822-231631.png?ref=skym3u.dev",Colors Bangla Cinema
 http://103.114.11.37:8081/Colors-bangla-cinema/index.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/J0QXn2jh/20240823_020641.png?ref=skym3u.dev",Enter 10 Bangla
@@ -214,7 +214,7 @@ http://27.124.71.27/Animal_Planet/index.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/F1t6r1gv/20240823_023247.png?ref=skym3u.dev",Colors HD
 http://103.114.11.37:8081/Colors-HD/index.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/8k3QXzvt/20240823_022853.png?ref=skym3u.dev",Star Plus HD
-http://103.114.11.37:8081/Star-Plus-HD/index.m3u8
+https://livetv.shamon-cable.net:8443/Star-Plus-HD/index.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/6pCXvxyz/20240823_022553.png?ref=skym3u.dev",Star Gold
 http://103.114.11.37:8081/StarGold/index.m3u8
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/JhR9HDw4/20240823_023056.png?ref=skym3u.dev",& Tv
