@@ -1,7 +1,6 @@
 #EXTM3U
 #EXTINF:-1 group-title="[LIVE] BDIX ♛" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/kK2aX5UBrjBfS2_RBcKf/posters/ba5dd8dc-4f87-414a-b57f-c9ecdeda5253.png",[BD] Zee Bangla
-#https://drk6xq0vhn.gpcdn.net/live/zee_bangla_720/chunks.m3u8
-http://103.135.253.32:8080/ZEE-BANGLA-HD/index.m3u8
+https://toffee-proxy.usergamil15.workers.dev/zee_bangla/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/wjWkWhzp/Zee-bangla.png" group-title="𝐈𝐧𝐝𝐢𝐚𝐧 𝐁𝐚𝐧𝐠𝐥𝐚",Zee Bangla HD
 https://tvsen6.aynaott.com/ZeeBangla/tracks-v1a1/mono.ts.m3u8
 #https://d1rc86nwwc9fag.cloudfront.net/260723/smil:zeebangla.smil/chunklist_b896000.m3u8
@@ -9,7 +8,8 @@ https://tvsen6.aynaott.com/ZeeBangla/tracks-v1a1/mono.ts.m3u8
 ----------------------------------- Bangla Chaneel----------------
 ------------------------------------              -----------------
 #EXTINF:-1  tvg-logo="https://i.postimg.cc/05n5rRv6/logo0.jpg",Raisan Tv
-https://dish.porosh.com.bd/hls/jalshabangla.m3u
+#https://dish.porosh.com.bd/hls/jalshabangla.m3u8
+https://toffee-proxy.usergamil15.workers.dev/toffee_movie/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="BTV" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1784629853305.png" group-title="Entertainment",BTV
 https://nkafmbewiff.gpcdn.net/tile_2/master.m3u8
 
