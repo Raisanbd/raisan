@@ -22,7 +22,7 @@ http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=sboxcast
 https://nkafmbewiff.gpcdn.net/tile_7/master.m3u8
 
 #EXTINF:-1  tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb0BlySbJ3Jd0avPgybx5PU_XT9qnQqwOxWZ9L06MITg&s=10",TSports HD
-http://103.151.60.162:2122/play/a030/index.m3u8
+http://116.204.149.16/T_SportsFHD/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="PTV Sports" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_400x400.jpg" group-title="Sports",PTV Sports
 https://tvsen5.aynaott.com/kP9vX2mZ7qL5wN3t/index.m3u8
 #EXTINF:-1  tvg-logo="https://raw.githubusercontent.com/ahan443/logo/refs/heads/main/atn%20bangla.png?ref=skym3u.dev",ATN Bangla
