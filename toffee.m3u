@@ -17,14 +17,15 @@ https://nkafmbewiff.gpcdn.net/tile_2/master.m3u8
 https://cdn-4.pishow.tv/live/1473/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="T-Sports" group-title="Sports",T-Sports
 http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=sboxcast
-
-#EXTINF:-1 tvg-id="" tvg-name="Channel 9 HD" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1770188028569.png" group-title="Entertainment",Channel 9 HD
-https://nkafmbewiff.gpcdn.net/tile_7/master.m3u8
-
 #EXTINF:-1  tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb0BlySbJ3Jd0avPgybx5PU_XT9qnQqwOxWZ9L06MITg&s=10",TSports HD
 http://116.204.149.16/T_SportsFHD/index.m3u8
 #EXTINF:-1  tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb0BlySbJ3Jd0avPgybx5PU_XT9qnQqwOxWZ9L06MITg&s=10",TSports HD 01
 https://server1.ziboplay.co/T-SPORRTS-HD/tracks-v1a1/mono.m3u8?token=AKASH
+
+#EXTINF:-1 tvg-id="" tvg-name="Channel 9 HD" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1770188028569.png" group-title="Entertainment",Channel 9 HD
+https://nkafmbewiff.gpcdn.net/tile_7/master.m3u8
+
+
 #EXTINF:-1 tvg-id="" tvg-name="PTV Sports" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_400x400.jpg" group-title="Sports",PTV Sports
 https://tvsen5.aynaott.com/kP9vX2mZ7qL5wN3t/index.m3u8
 #EXTINF:-1  tvg-logo="https://raw.githubusercontent.com/ahan443/logo/refs/heads/main/atn%20bangla.png?ref=skym3u.dev",ATN Bangla
